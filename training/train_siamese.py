@@ -80,19 +80,19 @@ def _run_epoch(
     return {name: value / batch_count for name, value in totals.items()}
 
 
-def _validation_eer(
+def _validation_threshold_and_eer(
     model: SiameseSignatureModel,
     records,
     *,
     already_preprocessed: bool,
     device: torch.device,
     references: int = 5,
-) -> float:
-    """Skilled-forgery EER on validation signers, using the same protocol as evaluate.py."""
+) -> tuple[float, float]:
+    """Return the validation threshold and skilled-forgery EER."""
     embeddings = _embed(model, records, already_preprocessed, device, 64, 0)
     scores = _scores(records, embeddings, references)
     genuine, skilled, _ = _pool(scores, sorted(scores))
-    return _eer_threshold(genuine, skilled)[1]
+    return _eer_threshold(genuine, skilled)
 
 
 def _set_seed(seed: int) -> None:
@@ -288,7 +288,7 @@ def main() -> None:
                 margin=args.margin,
             )
             global_epoch += 1
-            validation_eer = _validation_eer(
+            validation_threshold, validation_eer = _validation_threshold_and_eer(
                 model,
                 eer_records,
                 already_preprocessed=args.already_preprocessed,
@@ -319,6 +319,8 @@ def main() -> None:
                         "embedding_dim": model.embedding_dim,
                         "best_validation_loss": validation_metrics["loss"],
                         "best_validation_eer": validation_eer,
+                        "validation_threshold": validation_threshold,
+                        "validation_references": 5,
                         "selected_by": args.select_by,
                         "epoch": global_epoch,
                         "phase": phase_name,

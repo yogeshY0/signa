@@ -92,10 +92,11 @@ unfreezes the last two stages. Augmentation is on by default for the training sp
 | `--no-pretrained` | off | Random weights instead of ImageNet (smoke tests only) |
 
 The best checkpoint (by validation EER by default) is saved as `<output-dir>/best_model.pt`.
-One JSON line per epoch is printed, including `lr` and `validation_eer_skilled`. Computing
-the EER adds a few seconds per epoch on a GPU. Because the checkpoint and the evaluation
-threshold are both chosen on the validation signers, the validation EER is slightly optimistic;
-trust the test numbers.
+One JSON line per epoch is printed, including `lr` and `validation_eer_skilled`. The
+checkpoint also stores the validation threshold and its five-reference enrollment
+protocol for deployment integrations. Computing the EER adds a few seconds per epoch on a
+GPU. Because the checkpoint and the evaluation threshold are both chosen on the validation
+signers, the validation EER is slightly optimistic; trust the test numbers.
 
 ### On Kaggle
 
