@@ -158,6 +158,23 @@ Quote paths that contain spaces. Add `--grayscale` only if the model was trained
 grayscale data. As a rough guide from the evaluation, a similarity of about 0.8 or higher
 suggests the same signer; use the threshold printed by step 7 for your model.
 
+## 9. Run the Streamlit verifier
+
+Install the requirements and start the web app from the repository root:
+
+```bash
+.venv/bin/pip install -r requirements.txt
+.venv/bin/streamlit run streamlit_app.py
+```
+
+The app loads `best_model.pt` from the project directory. Upload one known genuine
+reference image and one test image. Adjust the cosine threshold in the sidebar;
+the default `0.88` corresponds to a 94% similarity score. It uses grayscale
+preprocessing by default, matching the direct training path, and reports cosine
+similarity, the selected threshold, threshold margin, normalized embedding
+distance, checkpoint metadata, and a match/no-match result. The displayed
+percentage is a rescaled similarity score, not a calibrated probability.
+
 ## Other commands
 
 Demo of the preprocessing on the two sample JPEGs (writes `preprocessed_outputs/`):
