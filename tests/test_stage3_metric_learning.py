@@ -14,6 +14,7 @@ from training.stage3_metric_learning import (
     SiameseSignatureModel,
     SignatureRecord,
     load_manifest,
+    supcon_loss,
     triplet_loss,
 )
 

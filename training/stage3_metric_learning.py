@@ -447,7 +447,7 @@ def supcon_loss(
     # Denominator excludes the anchor itself but includes all negatives.
     exp_sim = torch.exp(similarity[anchors] / temperature)
     exp_sim = exp_sim.masked_fill(
-        torch.eye(positive_mask.shape[0], dtype=torch.bool, device=embeddings.device), 0.0
+        torch.zeros_like(exp_sim, dtype=torch.bool).scatter_(1, anchors.unsqueeze(1), True), 0.0
     )
     denom = exp_sim.sum(dim=1)
 
@@ -457,10 +457,14 @@ def supcon_loss(
     # Diagnostics: mean positive/negative cosine sim and share of active anchors.
     negative_sim = similarity[anchors].masked_fill(positive_mask | not_self[anchors], 0.0)
     return -per_anchor_loss.mean(), {
-        "mean_positive": positive_similarity.masked_fill(~positive_mask, 0.0).sum(dim=1)
-        / positive_mask.sum(dim=1).clamp(min=1),
-        "mean_negative": negative_sim.sum(dim=1)
-        / ((negative_sim != 0.0).sum(dim=1)).clamp(min=1),
+        "mean_positive": (
+            positive_similarity.masked_fill(~positive_mask, 0.0).sum(dim=1)
+            / positive_mask.sum(dim=1).clamp(min=1)
+        ).float().mean(),
+        "mean_negative": (
+            negative_sim.sum(dim=1)
+            / ((negative_sim != 0.0).sum(dim=1)).clamp(min=1)
+        ).float().mean(),
         "active_fraction": (per_anchor_loss < 0.001).float().mean(),
     }
     # Note: metrics are tensors carrying graphs; the trainer detaches them when
