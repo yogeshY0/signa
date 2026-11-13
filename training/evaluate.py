@@ -162,6 +162,7 @@ def _bootstrap(scores, signers, threshold, resamples, dataset_only=False, seed=0
     return {
         key: [float(np.percentile([d[key] for d in draws], q)) for q in (2.5, 97.5)]
         for key in draws[0]
+        if isinstance(draws[0][key], (int, float, np.floating))
     }
 
 

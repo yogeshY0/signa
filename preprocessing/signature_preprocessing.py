@@ -24,7 +24,7 @@ DEFAULT_TARGET_SIZE = (384, 192)
 IMAGENET_MEAN = np.array([0.485, 0.456, 0.406], dtype=np.float32)
 IMAGENET_STD = np.array([0.229, 0.224, 0.225], dtype=np.float32)
 
-InkPolarity = Literal["auto", "light", "dark"]  # retained for CLI compatibility
+InkPolarity = Literal["auto", "light", "dark"]
 
 
 def _to_gray(image: np.ndarray) -> np.ndarray:
@@ -62,6 +62,29 @@ def flatten_illumination(gray: np.ndarray) -> np.ndarray:
     return corrected
 
 
+def normalize_polarity(gray: np.ndarray, ink: InkPolarity) -> np.ndarray:
+    """Return the image as dark ink on a white background.
+
+    The rest of the pipeline (``flatten_illumination``, ``crop_to_ink``) assumes
+    dark ink on a lighter background, so polarity is resolved before them.
+
+    Args:
+        gray: Single-channel ``uint8`` image.
+        ink: How to resolve polarity.
+            * ``"dark"``: keep as-is (dark ink on a white background).
+            * ``"light"``: assume light ink on a dark background and invert.
+            * ``"auto"``: infer polarity from the global mean. Signatures rarely
+              cover more than half of the canvas, so a mean below the midpoint
+              indicates a light-ink-on-dark scan and is inverted.
+    """
+    if ink == "dark":
+        return gray
+    if ink == "light":
+        return cv2.bitwise_not(gray)
+    # auto
+    return cv2.bitwise_not(gray) if gray.mean() < 130.0 else gray
+
+
 def to_grayscale(
     image: np.ndarray,
     ink: InkPolarity = "auto",
@@ -72,17 +95,16 @@ def to_grayscale(
 
     Args:
         image: Grayscale or BGR uint8 image.
-        ink: Retained for compatibility with existing callers. The preprocessing
-            assumes dark ink on a white or whitish background and does not inspect
-            or invert ink polarity.
+        ink: Resolve ink polarity to dark-ink-on-white ("auto" detects it,
+            "light" forces an inversion, "dark" keeps the image).
         blur_ksize: Odd Gaussian kernel size applied before resizing. ``0``
             disables it so pressure-dependent intensity is retained.
         remove_shadow: Flatten uneven illumination while preserving grayscale
             stroke contrast.
     """
     gray = _to_gray(image).copy()
-    # Ink polarity is intentionally not checked or inverted. Inputs are expected
-    # to have dark signatures on a white or whitish background.
+    # Polarize before illumination flattening, which expects dark ink on white.
+    gray = normalize_polarity(gray, ink)
     if remove_shadow:
         gray = flatten_illumination(gray)
     else:

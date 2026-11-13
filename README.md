@@ -48,9 +48,8 @@ By default, images are read as Stage 2.1 outputs and passed through
 `preprocess_signature` using the same Stage 2.2 path as inference. Stage 2.2
 preserves grayscale stroke intensity so pressure and ink flow are not lost and
 whitens the estimated paper background to 255. For already preprocessed 192x384
-grayscale images, pass `--already-preprocessed`. The preprocessing assumes dark
-signatures on a white or whitish background. The legacy `--ink` option remains
-accepted for compatibility but is ignored.
+grayscale images, pass `--already-preprocessed`. The preprocessing resolves ink
+polarity to dark-ink-on-white automatically (`--ink auto`, or force `light`/`dark`).
 
 ### Train
 

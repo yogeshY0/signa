@@ -155,9 +155,10 @@ Preprocesses the images, saves them, and prints the cosine similarity of every p
   --output-dir preprocessed_test_signs
 ```
 
-Quote paths that contain spaces. Add `--grayscale` only if the model was trained on
-grayscale data. As a rough guide from the evaluation, a similarity of about 0.8 or higher
-suggests the same signer; use the threshold printed by step 7 for your model.
+Quote paths that contain spaces. By default images are preprocessed as grayscale to
+match the training loader; add `--binary` only if the model was trained on pure
+black-and-white data. As a rough guide from the evaluation, a similarity of about 0.8
+or higher suggests the same signer; use the threshold printed by step 7 for your model.
 
 ## 9. Run the Streamlit verifier
 

@@ -20,7 +20,7 @@ from training.stage3_metric_learning import (
     SignatureDataset,
     SiameseSignatureModel,
     load_manifest,
-    triplet_loss,
+    signature_loss,
 )
 
 
@@ -39,6 +39,8 @@ def _run_epoch(
     *,
     mining: Literal["semi-hard", "batch-hard"],
     margin: float,
+    loss_mode: Literal["triplet", "supcon"] = "triplet",
+    temperature: float = 0.1,
     optimizer: torch.optim.Optimizer | None = None,
 ) -> dict[str, float]:
     training = optimizer is not None
@@ -55,12 +57,14 @@ def _run_epoch(
 
         with torch.set_grad_enabled(training):
             embeddings = model(images)
-            loss, metrics = triplet_loss(
+            loss, metrics = signature_loss(
+                loss_mode,
                 embeddings,
                 signer_ids,
                 is_forgery,
                 margin=margin,
                 mining=mining,
+                temperature=temperature,
             )
             if training:
                 loss.backward()
@@ -93,6 +97,27 @@ def _validation_threshold_and_eer(
     scores = _scores(records, embeddings, references)
     genuine, skilled, _ = _pool(scores, sorted(scores))
     return _eer_threshold(genuine, skilled)
+
+
+def _dataset_of_signers(records: list) -> dict[str, str]:
+    """Map each signer to its dataset name for dataset-balanced sampling."""
+    mapping: dict[str, str] = {}
+    for record in records:
+        if record.signer_id in mapping:
+            continue
+        path = str(record.image_path).replace("\\", "/").lower()
+        if "/cedar/" in path:
+            dataset = "cedar"
+        elif "/bhsig100_bengali/" in path:
+            dataset = "bengali"
+        elif "/bhsig160_hindi/" in path:
+            dataset = "hindi"
+        elif "/sohi/" in path:
+            dataset = "sohi"
+        else:
+            dataset = "other"
+        mapping[record.signer_id] = dataset
+    return mapping
 
 
 def _set_seed(seed: int) -> None:
@@ -139,6 +164,28 @@ def _parse_args() -> argparse.Namespace:
     parser.add_argument("--genuine-per-signer", type=int, default=4)
     parser.add_argument("--forgeries-per-signer", type=int, default=2)
     parser.add_argument("--margin", type=float, default=0.3)
+    parser.add_argument(
+        "--loss",
+        choices=("triplet", "supcon"),
+        default="triplet",
+        help="Triplet loss (default) or supervised contrastive loss.",
+    )
+    parser.add_argument(
+        "--temperature",
+        type=float,
+        default=0.1,
+        help="Softmax temperature used only with --loss supcon.",
+    )
+    parser.add_argument(
+        "--dataset-mix",
+        choices=("none", "equal"),
+        default="none",
+        help="Sample signers equally across datasets in every batch so small datasets (CEDAR, SOHI) are not dominated by large ones (BHSig-Hindi).",
+    )
+    parser.add_argument("--references", type=int, default=5,
+        help="Genuine references per signer for validation EER selection.")
+    parser.add_argument("--patience", type=int, default=0,
+        help="Early-stop after N epochs without improvement (0 disables).")
     parser.add_argument("--workers", type=int, default=0)
     parser.add_argument("--seed", type=int, default=42)
     return parser.parse_args()
@@ -176,12 +223,15 @@ def main() -> None:
         ink=args.ink,
     )
 
+    dataset_of = _dataset_of_signers(train_records) if args.dataset_mix == "equal" else None
     train_sampler = PKBatchSampler(
         train_records,
         signers_per_batch=args.signers_per_batch,
         genuine_per_signer=args.genuine_per_signer,
         forgeries_per_signer=args.forgeries_per_signer,
         seed=args.seed,
+        dataset_of=dataset_of,
+        mix=args.dataset_mix,
     )
     validation_eligible_signers = {
         record.signer_id
@@ -228,6 +278,7 @@ def main() -> None:
     args.output_dir.mkdir(parents=True, exist_ok=True)
     checkpoint_path = args.output_dir / "best_model.pt"
     best_score = math.inf
+    best_epoch = 0
     # EER needs enough genuine signatures per signer for the 5-reference protocol.
     genuine_per_validation_signer: dict[str, int] = {}
     for record in validation_records:
@@ -276,16 +327,21 @@ def main() -> None:
                 device,
                 mining=mining,
                 margin=args.margin,
+                loss_mode=args.loss,
+                temperature=args.temperature,
                 optimizer=optimizer,
             )
             # Validate with batch-hard in every phase: semi-hard and batch-hard
             # losses are not comparable, which would skew best-checkpoint selection.
+            # With supcon the mining mode is ignored but kept so the metric stays.
             validation_metrics = _run_epoch(
                 model,
                 validation_loader,
                 device,
                 mining="batch-hard",
                 margin=args.margin,
+                loss_mode=args.loss,
+                temperature=args.temperature,
             )
             global_epoch += 1
             validation_threshold, validation_eer = _validation_threshold_and_eer(
@@ -293,6 +349,7 @@ def main() -> None:
                 eer_records,
                 already_preprocessed=args.already_preprocessed,
                 device=device,
+                references=args.references,
             ) if eer_records else math.nan
             learning_rate_used = optimizer.param_groups[0]["lr"]
             if scheduler is not None:
@@ -313,6 +370,7 @@ def main() -> None:
             score = validation_eer if args.select_by == "eer" else validation_metrics["loss"]
             if score < best_score:
                 best_score = score
+                best_epoch = global_epoch
                 torch.save(
                     {
                         "model_state_dict": model.state_dict(),
@@ -320,7 +378,7 @@ def main() -> None:
                         "best_validation_loss": validation_metrics["loss"],
                         "best_validation_eer": validation_eer,
                         "validation_threshold": validation_threshold,
-                        "validation_references": 5,
+                        "validation_references": args.references,
                         "selected_by": args.select_by,
                         "epoch": global_epoch,
                         "phase": phase_name,
@@ -328,14 +386,20 @@ def main() -> None:
                         "preprocessing": {
                             "already_preprocessed": args.already_preprocessed,
                             "ink": args.ink,
+                            "binarize": False,  # the training loader keeps grayscale strokes
                             "augmentation": args.augment,
                             "target_size": list(DEFAULT_TARGET_SIZE),
                         },
                     },
                     checkpoint_path,
                 )
+            if args.patience > 0 and global_epoch - best_epoch >= args.patience:
+                print("Early stopping: no better %s for %d epochs." % ("EER" if args.select_by == "eer" else "loss", args.patience))
+                break
+        if args.patience > 0 and global_epoch - best_epoch >= args.patience:
+            break
 
-    print(f"Best checkpoint: {checkpoint_path}")
+    print("Best checkpoint: %s" % checkpoint_path)
 
 
 if __name__ == "__main__":

@@ -9,8 +9,9 @@ Usage:
   --checkpoint best_model.pt \
   --images test_signs/1.1.png test_signs/1.5.png test_signs/2.1.png test_signs/2.2.png
   
-Images use the same black-and-white preprocessing as the training data. The
-preprocessed images are saved to ``--output-dir`` as 192x384 PNGs.
+Images use the same grayscale preprocessing as the training data by default.
+Pass ``--binary`` only if the model was trained on pure black-and-white images.
+The preprocessed images are saved to ``--output-dir`` as 192x384 PNGs.
 """
 
 from __future__ import annotations
@@ -32,7 +33,11 @@ def main() -> None:
     parser.add_argument("--checkpoint", type=Path, required=True)
     parser.add_argument("--images", type=Path, nargs="+", required=True)
     parser.add_argument("--output-dir", type=Path, default=Path("preprocessed_test_signs"))
-    parser.add_argument("--grayscale", action="store_true", help="Match grayscale-trained models.")
+    parser.add_argument(
+        "--binary",
+        action="store_true",
+        help="Binarize to pure black and white (use only for models trained on binary data).",
+    )
     parser.add_argument("--device", default="cpu")
     args = parser.parse_args()
 
@@ -48,7 +53,7 @@ def main() -> None:
         image = cv2.imread(str(path), cv2.IMREAD_COLOR)
         if image is None:
             raise FileNotFoundError(f"could not read image: {path}")
-        processed = preprocess_signature(image, binarize=not args.grayscale)
+        processed = preprocess_signature(image, binarize=args.binary)
         target = args.output_dir / f"{path.stem}.png"
         if not cv2.imwrite(str(target), processed):
             raise OSError(f"could not write {target}")

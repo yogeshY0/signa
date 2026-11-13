@@ -113,10 +113,10 @@ with st.sidebar:
     binarize = st.checkbox(
         "Use binary black/white preprocessing",
         value=False,
-        help="Training used grayscale preprocessing. Leave this unchecked for matching train/inference preprocessing.",
+        help="The model is trained on grayscale strokes, so keep this unchecked to match train/inference preprocessing.",
     )
     if binarize:
-        st.warning("Binary preprocessing differs from the grayscale training path.")
+        st.warning("Binary preprocessing differs from the grayscale training path and may degrade results.")
 
 uploaded_reference = st.file_uploader(
     "Reference image (known genuine signature)",

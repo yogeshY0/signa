@@ -177,6 +177,8 @@ class PKBatchSampler(Sampler[list[int]]):
         genuine_per_signer: int,
         forgeries_per_signer: int = 0,
         seed: int = 42,
+        dataset_of: dict[str, str] | None = None,
+        mix: Literal["none", "equal"] = "none",
     ) -> None:
         if signers_per_batch < 2:
             raise ValueError("signers_per_batch must be at least 2")
@@ -190,6 +192,7 @@ class PKBatchSampler(Sampler[list[int]]):
         self.forgeries_per_signer = forgeries_per_signer
         self.seed = seed
         self.epoch = 0
+        self.mix = mix
         # Keep genuine and forged record indices separate for each signer.
         self.by_signer: dict[str, dict[bool, list[int]]] = {}
         for index, record in enumerate(records):
@@ -208,6 +211,19 @@ class PKBatchSampler(Sampler[list[int]]):
                 f"{genuine_per_signer} genuine images; found {len(self.eligible_signers)}"
             )
 
+        # Optional dataset-balanced mixing: group eligible signers by dataset so
+        # small datasets (e.g. CEDAR, SOHI) are not drowned out by large ones
+        # (e.g. BHSig-Hindi) when signers are sampled uniformly.
+        self.by_dataset_signers: dict[str, list[str]] = {}
+        self.dataset_order: list[str] = []
+        if dataset_of is not None and mix == "equal":
+            grouped: dict[str, list[str]] = {}
+            for signer in self.eligible_signers:
+                dataset = dataset_of.get(signer, "(other)")
+                grouped.setdefault(dataset, []).append(signer)
+            self.by_dataset_signers = grouped
+            self.dataset_order = sorted(grouped)
+
     def __len__(self) -> int:
         # Number of batches per epoch; signers are sampled anew for each batch.
         return max(1, (len(self.eligible_signers) + self.signers_per_batch - 1) // self.signers_per_batch)
@@ -216,11 +232,40 @@ class PKBatchSampler(Sampler[list[int]]):
         """Change the deterministic sampling sequence for the next epoch."""
         self.epoch = epoch
 
+    def _sample_signers(self, rng: random.Random) -> list[str]:
+        """Pick this batch's signers, mixing across datasets when enabled.
+
+        With ``mix == "equal"`` every dataset gets an (almost) equal share of the
+        batch so small datasets are guaranteed representation; leftover slots are
+        filled from signers not already chosen this batch.
+        """
+        if not self.by_dataset_signers:
+            return rng.sample(self.eligible_signers, self.signers_per_batch)
+
+        chosen: set[str] = set()
+        picked: list[str] = []
+        n_datasets = len(self.dataset_order)
+        base, rem = divmod(self.signers_per_batch, n_datasets)
+        slots = {ds: base + (1 if i < rem else 0) for i, ds in enumerate(self.dataset_order)}
+        for ds in self.dataset_order:
+            pool = self.by_dataset_signers[ds]
+            count = min(slots[ds], len(pool))
+            for signer in rng.sample(pool, count):
+                picked.append(signer)
+                chosen.add(signer)
+        # Top up from anyone not yet chosen to reach the requested batch size.
+        missing = self.signers_per_batch - len(picked)
+        if missing:
+            pool = [s for s in self.eligible_signers if s not in chosen]
+            for signer in rng.sample(pool, min(missing, len(pool))):
+                picked.append(signer)
+        return picked
+
     def __iter__(self) -> Iterator[list[int]]:
         # A local seeded RNG makes each epoch reproducible without changing global RNG.
         rng = random.Random(self.seed + self.epoch)
         for _ in range(len(self)):
-            signer_batch = rng.sample(self.eligible_signers, self.signers_per_batch)
+            signer_batch = self._sample_signers(rng)
             indices: list[int] = []
             for signer in signer_batch:
                 groups = self.by_signer[signer]
@@ -358,3 +403,86 @@ def triplet_loss(
         "mean_negative": selected_negative.mean().detach(),
         "active_fraction": (per_anchor_loss > 0).float().mean().detach(),
     }
+
+
+def supcon_loss(
+    embeddings: Tensor,
+    signer_ids: Tensor,
+    is_forgery: Tensor,
+    *,
+    temperature: float = 0.1,
+) -> tuple[Tensor, dict[str, Tensor]]:
+    """Supervised contrastive loss for genuine anchors.
+
+    Embeddings are expected to be unit-norm so the dot product is the cosine
+    similarity. Positives are other genuine samples from the same signer;
+    everything else (genuine of other signers and forgeries) is a negative.
+    Forged samples are never anchors. This uses all same-signer positives at
+    once, which can give more stable embeddings than a single hardest positive.
+    """
+    if embeddings.ndim != 2 or signer_ids.ndim != 1 or is_forgery.ndim != 1:
+        raise ValueError("expected 2D embeddings and 1D signer/forgery labels")
+    if embeddings.shape[0] != signer_ids.shape[0] or embeddings.shape[0] != is_forgery.shape[0]:
+        raise ValueError("embeddings and labels must have the same batch size")
+    if temperature <= 0:
+        raise ValueError("temperature must be positive")
+
+    embeddings = F.normalize(embeddings.float(), p=2, dim=1)
+    similarity = embeddings @ embeddings.t()  # cosine similarity matrix
+    is_forgery_bool = is_forgery.bool()
+    genuine = ~is_forgery_bool
+    same_signer = signer_ids[:, None].eq(signer_ids[None, :])
+    not_self = ~torch.eye(len(signer_ids), dtype=torch.bool, device=signer_ids.device)
+
+    # Positives: other genuine samples of the same signer.
+    positive_mask = same_signer & genuine[None, :] & not_self
+    anchors = torch.where(genuine)[0]
+    if torch.any(positive_mask[anchors].sum(dim=1) == 0):
+        raise ValueError("each genuine anchor needs another genuine sample from its signer")
+
+    positive_mask = positive_mask[anchors]
+    positive_similarity = torch.where(
+        positive_mask, similarity[anchors], torch.full_like(similarity[anchors], float("-inf"))
+    )
+    # Denominator excludes the anchor itself but includes all negatives.
+    exp_sim = torch.exp(similarity[anchors] / temperature)
+    exp_sim = exp_sim.masked_fill(
+        torch.eye(positive_mask.shape[0], dtype=torch.bool, device=embeddings.device), 0.0
+    )
+    denom = exp_sim.sum(dim=1)
+
+    numerator = torch.logsumexp(positive_similarity / temperature, dim=1)
+    per_anchor_loss = numerator - torch.log(denom)
+
+    # Diagnostics: mean positive/negative cosine sim and share of active anchors.
+    negative_sim = similarity[anchors].masked_fill(positive_mask | not_self[anchors], 0.0)
+    return -per_anchor_loss.mean(), {
+        "mean_positive": positive_similarity.masked_fill(~positive_mask, 0.0).sum(dim=1)
+        / positive_mask.sum(dim=1).clamp(min=1),
+        "mean_negative": negative_sim.sum(dim=1)
+        / ((negative_sim != 0.0).sum(dim=1)).clamp(min=1),
+        "active_fraction": (per_anchor_loss < 0.001).float().mean(),
+    }
+    # Note: metrics are tensors carrying graphs; the trainer detaches them when
+    # logging (see train_siamese). Positive/negative means are quoted per anchor.
+
+
+LossMode = Literal["triplet", "supcon"]
+
+
+def signature_loss(
+    mode: LossMode,
+    embeddings: Tensor,
+    signer_ids: Tensor,
+    is_forgery: Tensor,
+    *,
+    margin: float = 0.3,
+    mining: MiningMode = "batch-hard",
+    temperature: float = 0.1,
+) -> tuple[Tensor, dict[str, Tensor]]:
+    """Dispatch to ``triplet_loss`` or ``supcon_loss`` with a common signature."""
+    if mode == "supcon":
+        return supcon_loss(embeddings, signer_ids, is_forgery, temperature=temperature)
+    return triplet_loss(
+        embeddings, signer_ids, is_forgery, margin=margin, mining=mining
+    )

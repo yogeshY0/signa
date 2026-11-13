@@ -119,10 +119,9 @@ requires at least two distinct signers with two genuine images each.
 By default, the manifest points to upstream Stage 2.1 output images, and the
 dataset applies the project's Stage 2.2 preprocessing path. The path preserves
 grayscale intensity rather than reducing pixels to two levels and whitens the
-estimated paper background to 255. It assumes dark signatures on a white or
-whitish background; the legacy `--ink` option remains accepted for compatibility
-but is ignored. If files are already preprocessed 192 x 384 grayscale images, pass
-`--already-preprocessed`.
+estimated paper background to 255. Ink polarity is resolved to dark-ink-on-white
+automatically (`--ink auto`, or force `light`/`dark`). If files are already
+preprocessed 192 x 384 grayscale images, pass `--already-preprocessed`.
 
 ### Training augmentation
 
@@ -164,7 +163,7 @@ Useful options:
 ```text
 --image-root PATH                 Base directory for relative image paths
 --device auto|cpu|cuda|mps        Compute device (auto: CUDA, otherwise CPU)
---ink auto|light|dark             Legacy compatibility option; ignored
+--ink auto|light|dark             Ink-polarity resolution (auto detects it)
 --already-preprocessed            Require 192x384 grayscale input files
 --no-pretrained                   Initialize ConvNeXt without pretrained weights
 --phase1-epochs N                 Warm-up epochs (default 5)
