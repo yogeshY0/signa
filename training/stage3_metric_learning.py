@@ -455,7 +455,10 @@ def supcon_loss(
     per_anchor_loss = numerator - torch.log(denom)
 
     # Diagnostics: mean positive/negative cosine sim and share of active anchors.
-    negative_sim = similarity[anchors].masked_fill(positive_mask | not_self[anchors], 0.0)
+    self_col = torch.zeros_like(positive_mask)
+    self_col[torch.arange(positive_mask.shape[0], device=embeddings.device), anchors] = True
+    negative_mask = ~positive_mask & ~self_col
+    negative_sim = similarity[anchors].masked_fill(~negative_mask, 0.0)
     return -per_anchor_loss.mean(), {
         "mean_positive": (
             positive_similarity.masked_fill(~positive_mask, 0.0).sum(dim=1)
