@@ -11,22 +11,13 @@ decision system.
 | --- | --- | --- |
 | 1. Signature extraction | Detect and crop signatures from cheque images, currently upstream (for example, YOLO). | Upstream |
 | 2.1 Artifact cleaning | Remove stamps, lines, and noise from the crop. | Upstream |
-| 2.2 Image preprocessing | Preserve grayscale stroke intensity, normalize to dark ink on white, crop around ink, resize without stretching, and normalize for the model. | Implemented in [`preprocessing/signature_preprocessing.py`](./preprocessing/signature_preprocessing.py) |
-| 3. Deep metric learning | Train a ConvNeXt-Tiny encoder to map signatures into an embedding space. | Implemented in [`training/stage3_metric_learning.py`](./training/stage3_metric_learning.py) and [`training/train_siamese.py`](./training/train_siamese.py) |
-| 4. Scoring and verification | Compare embeddings with cosine similarity and evaluate a policy on representative data. | Similarity helper implemented; thresholds and deployment evaluation require project data |
+| 2.2 Image preprocessing | Preserve grayscale stroke intensity, dark ink on white, crop, resize without stretch, normalize. | preprocessing/signature_preprocessing.py |
+| 3. Deep metric learning | Train a ConvNeXt-Tiny encoder to map signatures into an embedding space. | training/stage3_metric_learning.py, training/train_siamese.py |
+| 4. Scoring and verification | Compare embeddings with cosine similarity and evaluate a policy. | Similarity helper implemented; thresholds and policy need project data |
 
-The Stage 2 output expected by Stage 3 is a 384 px wide, 192 px high grayscale
-image (`H x W = 192 x 384`, `target_size = (width, height) = (384, 192)`) with
-dark ink on a white background. Grayscale intensity is retained to represent
-stroke pressure and ink flow. The preprocessing module converts this to an
-ImageNet-normalized PyTorch tensor in `C x H x W` order: 3 channels, 192 high,
-384 wide. Keep the same preprocessing options for training and inference.
+Stage 3 expects a 384 x 192 grayscale image with dark ink on white, grayscale intensity retained for stroke pressure and ink flow. The model input is ImageNet-normalized C x H x W (3 channels, 192 high, 384 wide). Keep the same preprocessing for training and inference.
 
 ## Environment setup
-
-The development environment was created with Python 3.11 in the repository's
-`.venv`:
-
 ```bash
 python3.11 -m venv .venv
 source .venv/bin/activate
@@ -34,129 +25,101 @@ python -m pip install --upgrade pip
 python -m pip install -r requirements.txt
 ```
 
-In VS Code, select `.venv/bin/python` as the workspace interpreter. The
-dependencies are listed in [`requirements.txt`](./requirements.txt): PyTorch,
-torchvision, timm, OpenCV, scikit-learn, and Albumentations.
+Dependencies are listed in requirements.txt: PyTorch, torchvision, timm, OpenCV, scikit-learn, Albumentations. Use --device auto to pick CUDA or CPU. On Apple Silicon, --device mps may crash with the installed PyTorch build; use CPU unless MPS is confirmed working. The first pretrained run downloads ConvNeXt weights.
 
-Use `--device auto` to select CUDA when available and CPU otherwise. An MPS
-device can be selected explicitly with `--device mps` on Apple Silicon, but the
-installed PyTorch build crashed during an MPS ConvNeXt forward-pass check.
-Use CPU unless MPS is confirmed to work on the local macOS/PyTorch combination.
-The first pretrained run may download ConvNeXt weights.
+## Datasets
 
-## Stage 3 implementation
-
-### Model and embeddings
-
-- Backbone: `convnext_tiny` from timm, initialized with ImageNet weights by
-  default.
-- Projection head: `Linear → LayerNorm → ReLU → Dropout → Linear`.
-  LayerNorm is used because signer-structured PK batches make batch statistics
-  less reliable; it behaves identically in training and inference.
-- Embedding: 512 dimensions, L2-normalized.
-- `SiameseSignatureModel.compare(reference, query)` returns pairwise cosine
-  similarities. Similarity is not a calibrated probability.
-
-### Sampling and loss
-
-Training batches are signer-balanced: sample `P` signers, `K` genuine samples
-per signer, and up to `F` skilled forgeries that imitate each signer. Genuine
-signatures are anchors and positives. Genuine signatures from other signers
-and skilled forgeries of the same signer are negatives; forgeries are never
-anchors or positives.
-
-The loss computes pairwise Euclidean distances over normalized embeddings.
-Warm-up uses semi-hard negative mining; fine-tuning uses batch-hard mining.
-The training output reports loss, mean selected positive and negative
-distances, and the fraction of active triplets.
-
-### Two training phases
-
-Defaults follow the architecture plan:
-
-1. Warm-up: freeze ConvNeXt, train the projection head for 5 epochs with
-   semi-hard mining and learning rate `1e-3`.
-2. Fine-tune: unfreeze the last two ConvNeXt stages for 20 epochs with
-   batch-hard mining and learning rate `1e-4`.
-
-The default batch uses 12 signers, 4 genuine signatures per signer, and up to
-2 skilled forgeries per signer. Adjust epochs, batch composition, and device
-for the dataset and available hardware. Within each phase the learning rate follows a
-cosine decay to 1% of its starting value (`--lr-schedule constant` disables it). The
-best checkpoint is selected by the skilled-forgery EER on the signer-disjoint validation
-set, using the same 5-reference protocol as `training/evaluate.py` (`--select-by loss`
-selects by validation loss instead, computed with batch-hard mining in both phases).
-
-## Dataset manifest
-
-The repository does not include signature images. Create a CSV manifest with
-these columns:
+Signature images are not committed; the data folders live in data/ (Git-ignored) and are described by CSV manifests with these columns:
 
 | Column | Meaning |
 | --- | --- |
-| `image_path` | Path to an image; absolute or relative to the manifest directory, unless `--image-root` is provided. |
-| `signer_id` | Signer identifier. For a skilled forgery, use the identifier of the signer being imitated. |
-| `is_forgery` | `true`/`false` or `1`/`0`. |
-| `split` | `train`, `val` (or `validation`), or optional `test`. |
+| image_path | Path to an image; absolute or relative to the manifest directory, unless --image-root is given. |
+| signer_id | Signer identifier. For a skilled forgery, use the identifier of the signer being imitated. |
+| is_forgery | true/false or 1/0. |
+| split | train, val (or validation), or test. |
 
-Example:
+Keep signers disjoint across train, validation, and test. Test rows are not used for training or validation. Forgeries carry the id of the signer they imitate.
 
-```csv
-image_path,signer_id,is_forgery,split
-signatures/signer_001/genuine_01.png,signer_001,false,train
-signatures/signer_001/genuine_02.png,signer_001,false,train
-signatures/signer_002/forged_01.png,signer_002,true,train
-signatures/validation/signer_101/genuine_01.png,signer_101,false,val
-signatures/validation/signer_102/genuine_01.png,signer_102,false,val
+### Dataset inventory
+
+| Dataset | Signers | Images | Genuine | Forged | Format |
+| --- | --- | --- | --- | --- | --- |
+| BHSig-Bengali | 100 | 5,400 | 2,400 | 3,000 | 192 x 384 binary PNG |
+| BHSig-Hindi | 160 | 8,640 | 3,840 | 4,800 | 192 x 384 binary PNG |
+| CEDAR | 55 | 2,640 | 1,320 | 1,320 | 192 x 384 binary PNG |
+| GPDS-Synthetic | 150 | 8,100 | 3,600 | 4,500 | raw JPG scans |
+| Total | 465 | 24,780 | 11,160 | 13,620 | |
+
+A combined, signer-disjoint manifest data/manifest_kaggle.csv merges BHSig + CEDAR + GPDS for Kaggle.
+NOTE: 24 CEDAR forgery rows of signer 7 are referenced but missing from disk; restore them or drop those
+rows before evaluation. Training is unaffected because they belong to the test split.
+
+### GPDS notes
+The downloaded GPDS folder splits train and test by sample (01-16 train, 17-24 test) for the same
+150 signers, which leaks signers across splits. Run preprocessing/build_gpds_manifest.py to pool all
+samples per signer and re-split by signer (about 70/15/15), writing data/manifests/gpds.csv. GPDS images
+are raw large grayscale JPGs, and about 40 percent have very faint (light) ink; run check_dataset before training.
+
+### Data audit
+preprocessing/check_dataset.py audits a manifest for missing or unreadable files, wrong size, binary
+versus grayscale mode, and per-dataset ink density:
+
+```bash
+python -m preprocessing.check_dataset --manifest data/manifests/gpds.csv --image-root data
 ```
 
-Keep signers disjoint across train, validation, and test. Test rows are not
-used to train or validate; they are checked for signer overlap. The loader
-requires at least one train row and one validation row. Training needs enough
-signers with the requested number of genuine images per batch. Validation
-requires at least two distinct signers with two genuine images each.
+Run it on every new manifest to catch near-empty images, mixed modes, and path problems before training.
 
-By default, the manifest points to upstream Stage 2.1 output images, and the
-dataset applies the project's Stage 2.2 preprocessing path. The path preserves
-grayscale intensity rather than reducing pixels to two levels and whitens the
-estimated paper background to 255. Ink polarity is resolved to dark-ink-on-white
-automatically (`--ink auto`, or force `light`/`dark`). If files are already
-preprocessed 192 x 384 grayscale images, pass `--already-preprocessed`.
+BHSig and CEDAR are already preprocessed 192 x 384 images while GPDS is raw. Training without
+--already-preprocessed runs the pipeline on both, re-processing the already-processed ones. This is an
+acceptable experiment, but for a clean baseline unify the representation first (for example preprocess GPDS
+with --grayscale into data/processed/).
 
-### Training augmentation
+## Stage 3 implementation
+### Model and embeddings
 
-Augmentation is **off by default**: in two seeds each it raised skilled-forgery EER
-(about 15.7% vs 12.1% average). Pass `--augment` to enable it. When enabled, training
-images get mild random augmentation on the fly (`preprocessing/augmentation.py`):
-rotation up to 5 degrees, shear, 0.9-1.1 scale, shifts up to 5%, occasional stroke
-thickening or thinning, and light noise. Images are never flipped, and binary images stay
-binary. It is applied to the training split only. Nothing is written to disk, so the manifest and
-`data/processed/` are unchanged. Training always starts from the ImageNet weights,
-not from an earlier checkpoint.
+- Backbone: convnext_tiny from timm, ImageNet weights by default.
+- Projection head: Linear, LayerNorm, ReLU, Dropout, Linear. LayerNorm is used because signer-structured
+  P-K batches make batch statistics less reliable, and it behaves identically in training and inference.
+- Embedding: 512 dimensions, L2-normalized.
+- SiameseSignatureModel.compare(reference, query) returns pairwise cosine similarities.
+### Sampling and loss
 
-### Public-dataset preprocessing (black and white)
+Training batches are signer-balanced: sample P signers, K genuine samples per signer, and up to F skilled
+forgeries that imitate each signer. Genuine signatures are anchors and positives; genuine signatures of other
+signers and skilled forgeries of the same signer are negatives; forgeries are never anchors or positives.
 
-Public datasets are prepared once with `python -m preprocessing.build_manifests`
-(per-dataset signer splits in `data/manifests/`, merged into `data/manifest.csv`) and
-`python -m preprocessing.preprocess_dataset` (writes `data/processed/`). This step
-writes pure black-and-white (0/255) 192 x 384 PNGs by default, because BHSig260 is
-already binary; pass `--grayscale` to keep grayscale strokes. Training and inference
-must use matching preprocessing.
+Dataset-balanced batches (--dataset-mix equal): by default signers are sampled uniformly, so a large dataset
+such as BHSig-Hindi (160 signers) dominates and a small one (CEDAR, 55) is starved. With --dataset-mix equal
+the batch is split evenly across datasets, so every dataset is represented in every batch.
+The default loss is triplet with Euclidean distances over normalized embeddings; warm-up uses semi-hard
+mining and fine-tuning uses batch-hard mining. An alternative is supervised contrastive (--loss supcon
+--temperature 0.1), which uses all same-signer genuine samples as positives and every other sample as a
+negative, giving more stable embeddings than a single hardest positive. The SupCon loss handles batches that
+contain forgeries.
 
+### Two training phases
+1. Warm-up: freeze ConvNeXt, train the projection head for 5 epochs with semi-hard mining and lr 1e-3.
+2. Fine-tune: unfreeze the last two ConvNeXt stages for 20 epochs with batch-hard mining and lr 1e-4.
+
+The default batch uses 12 signers, 4 genuine signatures per signer, and up to 2 skilled forgeries per signer.
+The learning rate follows a cosine decay to 1 percent of its start within each phase. The best checkpoint is
+selected by the skilled-forgery EER on the signer-disjoint validation set (--select-by loss uses validation
+loss with batch-hard mining).
+
+Early stopping (--patience N): stops when the validation score has not improved for N epochs. The validation
+EER uses --references (default 5); set --references 1 to match a one-reference deployment.
 ## Train
 
 From the activated environment:
 
 ```bash
-python -m training.train_siamese \
-  --manifest data/manifest.csv \
-  --output-dir checkpoints/stage3
+python -m training.train_siamese --manifest data/manifest.csv --output-dir checkpoints/stage3
 ```
 
-The script saves the best checkpoint to
-`checkpoints/stage3/best_model.pt`. The checkpoint contains model weights,
-embedding dimension, validation loss, epoch and phase, seed, and preprocessing
-settings.
+The script saves the best checkpoint to checkpoints/stage3/best_model.pt. The checkpoint contains model
+weights, embedding dimension, validation loss, validation EER and threshold, epoch, phase, seed, and
+preprocessing settings (including binarize and the loss).
 
 Useful options:
 
@@ -165,67 +128,44 @@ Useful options:
 --device auto|cpu|cuda|mps        Compute device (auto: CUDA, otherwise CPU)
 --ink auto|light|dark             Ink-polarity resolution (auto detects it)
 --already-preprocessed            Require 192x384 grayscale input files
---no-pretrained                   Initialize ConvNeXt without pretrained weights
 --phase1-epochs N                 Warm-up epochs (default 5)
 --phase2-epochs N                 Fine-tuning epochs (default 20)
 --signers-per-batch N             P (default 12)
 --genuine-per-signer N            K (default 4)
 --forgeries-per-signer N          F (default 2)
 --margin FLOAT                    Triplet margin (default 0.3)
+--loss triplet|supcon             Training objective (default triplet)
+--temperature FLOAT               SupCon temperature (default 0.1)
+--dataset-mix none|equal          Equal signers per dataset per batch (default none)
+--references N                    Genuine references for validation EER (default 5)
+--patience N                      Early-stop after N epochs without improvement (0 disables)
 --workers N                       DataLoader workers (default 0)
 --seed N                          Random seed (default 42)
 ```
 
-For example, to run a quick CPU trial without downloading ImageNet weights:
+Example with balanced batches, SupCon loss, one-reference protocol, and early stopping:
 
 ```bash
-python -m training.train_siamese \
-  --manifest data/manifest.csv \
-  --output-dir checkpoints/stage3-smoke \
-  --device cpu \
-  --no-pretrained \
-  --phase1-epochs 1 \
-  --phase2-epochs 0
+python -m training.train_siamese --manifest data/manifest_kaggle.csv --image-root data --output-dir checkpoints/v5_supcon --phase1-epochs 5 --phase2-epochs 30 --dataset-mix equal --loss supcon --temperature 0.1 --references 1 --patience 6
 ```
 
-The trial still requires a valid manifest and enough samples for the selected
-batch sizes.
+For a quick CPU trial without pretrained weights, pass --no-pretrained and small epoch counts.
 
 ## Tests and checks
-
-Run the focused unit tests:
 
 ```bash
 python -m unittest discover -s tests -t .
 ```
 
-The tests cover manifest signer-split validation, P-K batch composition,
-skilled-forgery negatives, semi-hard loss, and invalid triplet batches. During
-implementation, all five tests passed, the training CLI started, and a
-synthetic dataset completed a one-epoch warm-up and a one-epoch fine-tuning
-run, saving a checkpoint. A separate CPU forward-pass check produced a
-unit-normalized 512-dimensional embedding.
-
-These are implementation checks only. Synthetic data does not establish
-signature-recognition quality, select operating thresholds, or replace a
-signer-disjoint evaluation on representative real signatures.
+The tests cover manifest signer-split validation, P-K batch composition, triplet and SupCon loss (including
+batches that contain forgeries), and ink-polarity normalization. These are implementation checks only; they
+do not establish signature-recognition quality or select operating thresholds.
 
 ## Before using real data or deployment
+1. Verify forged signer_id values identify the imitated signer.
+2. Split by signer before training; never tune on the test set.
+3. Run preprocessing/check_dataset.py on every manifest and confirm no missing files and one consistent mode.
+4. Select thresholds on validation data, ideally for a target skilled-FAR, and report FAR/FRR with uncertainty on an untouched test set.
+5. Treat cosine similarity as a score, not a probability; use human review and approved decision policies.
 
-1. Prepare and review genuine and, where available, skilled-forgery labels.
-   Verify that forgery `signer_id` values identify the imitated signer.
-2. Split by signer (and by acquisition session/scanner where feasible) before
-   training. Never tune on the test set.
-3. Check upstream signature crops for clipped strokes and choose the correct
-   ink polarity.
-4. Train on real data, inspect validation loss and embedding diagnostics, and
-   compare performance separately for genuine, random-forgery, and
-   skilled-forgery queries.
-5. Select thresholds on validation data. Report FAR/FRR and signer-level
-   uncertainty on an untouched test set before considering any operating
-   policy.
-6. Treat cosine similarity as a score, not a probability or proof of
-   authenticity. Use human review and institution-approved decision policies.
-
-For the full pipeline design, evaluation protocol, and scoring-policy
-discussion, see [`offline_signature_verification_architecture.md`](./docs/offline_signature_verification_architecture.md).
+See docs/offline_signature_verification_architecture.md for the full pipeline and evaluation design.
