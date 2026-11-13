@@ -116,6 +116,8 @@ def _dataset_of_signers(records: list) -> dict[str, str]:
             dataset = "sohi"
         elif "/new folder (10)" in path:
             dataset = "gpds"
+        elif "/gpds/" in path:
+            dataset = "gpds"
         else:
             dataset = "other"
         mapping[record.signer_id] = dataset
