@@ -92,11 +92,9 @@ signers and skilled forgeries of the same signer are negatives; forgeries are ne
 Dataset-balanced batches (--dataset-mix equal): by default signers are sampled uniformly, so a large dataset
 such as BHSig-Hindi (160 signers) dominates and a small one (CEDAR, 55) is starved. With --dataset-mix equal
 the batch is split evenly across datasets, so every dataset is represented in every batch.
-The default loss is triplet with Euclidean distances over normalized embeddings; warm-up uses semi-hard
-mining and fine-tuning uses batch-hard mining. An alternative is supervised contrastive (--loss supcon
---temperature 0.1), which uses all same-signer genuine samples as positives and every other sample as a
-negative, giving more stable embeddings than a single hardest positive. The SupCon loss handles batches that
-contain forgeries.
+The only training objective is triplet loss over the L2-normalized embeddings; warm-up uses semi-hard
+mining and fine-tuning uses batch-hard mining. SupCon was removed from the pipeline because the
+triplet objective performs better on this dataset mix.
 
 ### Two training phases
 1. Warm-up: freeze ConvNeXt, train the projection head for 5 epochs with semi-hard mining and lr 1e-3.
@@ -134,8 +132,6 @@ Useful options:
 --genuine-per-signer N            K (default 4)
 --forgeries-per-signer N          F (default 2)
 --margin FLOAT                    Triplet margin (default 0.3)
---loss triplet|supcon             Training objective (default triplet)
---temperature FLOAT               SupCon temperature (default 0.1)
 --dataset-mix none|equal          Equal signers per dataset per batch (default none)
 --references N                    Genuine references for validation EER (default 5)
 --patience N                      Early-stop after N epochs without improvement (0 disables)
@@ -143,10 +139,10 @@ Useful options:
 --seed N                          Random seed (default 42)
 ```
 
-Example with balanced batches, SupCon loss, one-reference protocol, and early stopping:
+Example with balanced batches, triplet loss, one-reference protocol, and early stopping:
 
 ```bash
-python -m training.train_siamese --manifest data/manifest_kaggle.csv --image-root data --output-dir checkpoints/v5_supcon --phase1-epochs 5 --phase2-epochs 30 --dataset-mix equal --loss supcon --temperature 0.1 --references 1 --patience 6
+python -m training.train_siamese --manifest data/manifest_kaggle.csv --image-root data --output-dir checkpoints/v5_triplet --phase1-epochs 5 --phase2-epochs 30 --dataset-mix equal --references 1 --patience 6
 ```
 
 For a quick CPU trial without pretrained weights, pass --no-pretrained and small epoch counts.
@@ -157,9 +153,9 @@ For a quick CPU trial without pretrained weights, pass --no-pretrained and small
 python -m unittest discover -s tests -t .
 ```
 
-The tests cover manifest signer-split validation, P-K batch composition, triplet and SupCon loss (including
-batches that contain forgeries), and ink-polarity normalization. These are implementation checks only; they
-do not establish signature-recognition quality or select operating thresholds.
+The tests cover manifest signer-split validation, P-K batch composition, triplet loss (including batches
+that contain forgeries), and ink-polarity normalization. These are implementation checks only; they do not
+establish signature-recognition quality or select operating thresholds.
 
 ## Before using real data or deployment
 1. Verify forged signer_id values identify the imitated signer.

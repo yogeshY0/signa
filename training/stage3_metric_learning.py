@@ -405,91 +405,18 @@ def triplet_loss(
     }
 
 
-def supcon_loss(
-    embeddings: Tensor,
-    signer_ids: Tensor,
-    is_forgery: Tensor,
-    *,
-    temperature: float = 0.1,
-) -> tuple[Tensor, dict[str, Tensor]]:
-    """Supervised contrastive loss for genuine anchors.
-
-    Embeddings are expected to be unit-norm so the dot product is the cosine
-    similarity. Positives are other genuine samples from the same signer;
-    everything else (genuine of other signers and forgeries) is a negative.
-    Forged samples are never anchors. This uses all same-signer positives at
-    once, which can give more stable embeddings than a single hardest positive.
-    """
-    if embeddings.ndim != 2 or signer_ids.ndim != 1 or is_forgery.ndim != 1:
-        raise ValueError("expected 2D embeddings and 1D signer/forgery labels")
-    if embeddings.shape[0] != signer_ids.shape[0] or embeddings.shape[0] != is_forgery.shape[0]:
-        raise ValueError("embeddings and labels must have the same batch size")
-    if temperature <= 0:
-        raise ValueError("temperature must be positive")
-
-    embeddings = F.normalize(embeddings.float(), p=2, dim=1)
-    similarity = embeddings @ embeddings.t()  # cosine similarity matrix
-    is_forgery_bool = is_forgery.bool()
-    genuine = ~is_forgery_bool
-    same_signer = signer_ids[:, None].eq(signer_ids[None, :])
-    not_self = ~torch.eye(len(signer_ids), dtype=torch.bool, device=signer_ids.device)
-
-    # Positives: other genuine samples of the same signer.
-    positive_mask = same_signer & genuine[None, :] & not_self
-    anchors = torch.where(genuine)[0]
-    if torch.any(positive_mask[anchors].sum(dim=1) == 0):
-        raise ValueError("each genuine anchor needs another genuine sample from its signer")
-
-    positive_mask = positive_mask[anchors]
-    positive_similarity = torch.where(
-        positive_mask, similarity[anchors], torch.full_like(similarity[anchors], float("-inf"))
-    )
-    # Denominator excludes the anchor itself but includes all negatives.
-    exp_sim = torch.exp(similarity[anchors] / temperature)
-    exp_sim = exp_sim.masked_fill(
-        torch.zeros_like(exp_sim, dtype=torch.bool).scatter_(1, anchors.unsqueeze(1), True), 0.0
-    )
-    denom = exp_sim.sum(dim=1)
-
-    numerator = torch.logsumexp(positive_similarity / temperature, dim=1)
-    per_anchor_loss = numerator - torch.log(denom)
-
-    # Diagnostics: mean positive/negative cosine sim and share of active anchors.
-    self_col = torch.zeros_like(positive_mask)
-    self_col[torch.arange(positive_mask.shape[0], device=embeddings.device), anchors] = True
-    negative_mask = ~positive_mask & ~self_col
-    negative_sim = similarity[anchors].masked_fill(~negative_mask, 0.0)
-    return -per_anchor_loss.mean(), {
-        "mean_positive": (
-            positive_similarity.masked_fill(~positive_mask, 0.0).sum(dim=1)
-            / positive_mask.sum(dim=1).clamp(min=1)
-        ).float().mean(),
-        "mean_negative": (
-            negative_sim.sum(dim=1)
-            / ((negative_sim != 0.0).sum(dim=1)).clamp(min=1)
-        ).float().mean(),
-        "active_fraction": (per_anchor_loss < 0.001).float().mean(),
-    }
-    # Note: metrics are tensors carrying graphs; the trainer detaches them when
-    # logging (see train_siamese). Positive/negative means are quoted per anchor.
-
-
-LossMode = Literal["triplet", "supcon"]
+LossMode = Literal["triplet"]
 
 
 def signature_loss(
-    mode: LossMode,
     embeddings: Tensor,
     signer_ids: Tensor,
     is_forgery: Tensor,
     *,
     margin: float = 0.3,
     mining: MiningMode = "batch-hard",
-    temperature: float = 0.1,
 ) -> tuple[Tensor, dict[str, Tensor]]:
-    """Dispatch to ``triplet_loss`` or ``supcon_loss`` with a common signature."""
-    if mode == "supcon":
-        return supcon_loss(embeddings, signer_ids, is_forgery, temperature=temperature)
+    """Compute triplet loss; triplet is the only supported training objective."""
     return triplet_loss(
         embeddings, signer_ids, is_forgery, margin=margin, mining=mining
     )

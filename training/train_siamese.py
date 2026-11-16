@@ -39,8 +39,6 @@ def _run_epoch(
     *,
     mining: Literal["semi-hard", "batch-hard"],
     margin: float,
-    loss_mode: Literal["triplet", "supcon"] = "triplet",
-    temperature: float = 0.1,
     optimizer: torch.optim.Optimizer | None = None,
 ) -> dict[str, float]:
     training = optimizer is not None
@@ -58,13 +56,11 @@ def _run_epoch(
         with torch.set_grad_enabled(training):
             embeddings = model(images)
             loss, metrics = signature_loss(
-                loss_mode,
                 embeddings,
                 signer_ids,
                 is_forgery,
                 margin=margin,
                 mining=mining,
-                temperature=temperature,
             )
             if training:
                 loss.backward()
@@ -168,18 +164,6 @@ def _parse_args() -> argparse.Namespace:
     parser.add_argument("--genuine-per-signer", type=int, default=4)
     parser.add_argument("--forgeries-per-signer", type=int, default=2)
     parser.add_argument("--margin", type=float, default=0.3)
-    parser.add_argument(
-        "--loss",
-        choices=("triplet", "supcon"),
-        default="triplet",
-        help="Triplet loss (default) or supervised contrastive loss.",
-    )
-    parser.add_argument(
-        "--temperature",
-        type=float,
-        default=0.1,
-        help="Softmax temperature used only with --loss supcon.",
-    )
     parser.add_argument(
         "--dataset-mix",
         choices=("none", "equal"),
@@ -331,21 +315,16 @@ def main() -> None:
                 device,
                 mining=mining,
                 margin=args.margin,
-                loss_mode=args.loss,
-                temperature=args.temperature,
                 optimizer=optimizer,
             )
             # Validate with batch-hard in every phase: semi-hard and batch-hard
             # losses are not comparable, which would skew best-checkpoint selection.
-            # With supcon the mining mode is ignored but kept so the metric stays.
             validation_metrics = _run_epoch(
                 model,
                 validation_loader,
                 device,
                 mining="batch-hard",
                 margin=args.margin,
-                loss_mode=args.loss,
-                temperature=args.temperature,
             )
             global_epoch += 1
             validation_threshold, validation_eer = _validation_threshold_and_eer(

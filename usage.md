@@ -177,6 +177,26 @@ similarity, the selected threshold, threshold margin, normalized embedding
 distance, checkpoint metadata, and a match/no-match result. The displayed
 percentage is a rescaled similarity score, not a calibrated probability.
 
+## 10. Measure CPU resources and request capacity
+
+One request means one reference image plus one questioned image. The benchmark follows
+the Streamlit path: it preprocesses both images, runs one embedding forward pass for
+each image, and computes cosine similarity:
+
+```bash
+venv/bin/python benchmark_inference.py --checkpoint best_model.pt --runs 20 --warmup 3
+```
+
+It reports checkpoint size, parameter count, peak process memory, mean/median/P95
+model latency, end-to-end latency, and estimated verifications per second. Run it on
+the target deployment machine; CPU model and thread count affect the result. Use
+`--threads 4` (or another tested value) to compare CPU configurations.
+
+The reported throughput is sequential capacity for one process. It is not a guaranteed
+multi-user request limit. For a service, test concurrent requests separately and leave
+memory headroom; multiple simultaneous model forwards can increase latency and RAM
+usage.
+
 ## Other commands
 
 Demo of the preprocessing on the two sample JPEGs (writes `preprocessed_outputs/`):
