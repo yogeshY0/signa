@@ -1,0 +1,5558 @@
+{
+  "root": "/Users/yogesh/c0DE/sinfnf/data/BHSig260",
+  "total": 16635,
+  "classified": 16632,
+  "unreadable": 0,
+  "zero_byte": [],
+  "parse_failures": [],
+  "junk": [
+    {
+      "path": "data/BHSig260/cedar/full_org/Thumbs.db",
+      "note": "non-image"
+    },
+    {
+      "path": "data/BHSig260/cedar/full_forg/Thumbs.db",
+      "note": "non-image"
+    },
+    {
+      "path": "data/BHSig260/BHSig100_Bengali/.DS_Store",
+      "note": "non-image"
+    }
+  ],
+  "duplicates": [
+    [
+      "data/BHSig260/BHSig160_Hindi/Genuine/H-S-81-G-03.tif",
+      "data/BHSig260/BHSig160_Hindi/Genuine/H-S-81-G-21.tif"
+    ],
+    [
+      "data/BHSig260/BHSig160_Hindi/Genuine/H-S-85-G-21.tif",
+      "data/BHSig260/BHSig160_Hindi/Genuine/H-S-85-G-03.tif"
+    ],
+    [
+      "data/BHSig260/BHSig160_Hindi/Genuine/H-S-37-G-02.tif",
+      "data/BHSig260/BHSig160_Hindi/Genuine/H-S-37-G-24.tif"
+    ],
+    [
+      "data/BHSig260/BHSig160_Hindi/Genuine/H-S-15-G-04.tif",
+      "data/BHSig260/BHSig160_Hindi/Genuine/H-S-15-G-16.tif"
+    ],
+    [
+      "data/BHSig260/BHSig160_Hindi/Genuine/H-S-107-G-24.tif",
+      "data/BHSig260/BHSig160_Hindi/Genuine/H-S-107-G-01.tif",
+      "data/BHSig260/BHSig160_Hindi/Genuine/H-S-107-G-16.tif"
+    ],
+    [
+      "data/BHSig260/BHSig160_Hindi/Genuine/H-S-107-G-18.tif",
+      "data/BHSig260/BHSig160_Hindi/Genuine/H-S-107-G-19.tif",
+      "data/BHSig260/BHSig160_Hindi/Genuine/H-S-107-G-17.tif"
+    ],
+    [
+      "data/BHSig260/BHSig160_Hindi/Genuine/H-S-107-G-21.tif",
+      "data/BHSig260/BHSig160_Hindi/Genuine/H-S-107-G-20.tif",
+      "data/BHSig260/BHSig160_Hindi/Genuine/H-S-107-G-22.tif"
+    ],
+    [
+      "data/BHSig260/BHSig160_Hindi/Genuine/H-S-66-G-23.tif",
+      "data/BHSig260/BHSig160_Hindi/Genuine/H-S-66-G-13.tif"
+    ],
+    [
+      "data/BHSig260/BHSig160_Hindi/Forged/H-S-115-F-08.tif",
+      "data/BHSig260/BHSig160_Hindi/Forged/H-S-115-F-26.tif"
+    ],
+    [
+      "data/BHSig260/BHSig160_Hindi/Forged/H-S-57-F-27.tif",
+      "data/BHSig260/BHSig160_Hindi/Forged/H-S-57-F-04.tif"
+    ],
+    [
+      "data/BHSig260/BHSig160_Hindi/Forged/H-S-137-F-30.tif",
+      "data/BHSig260/BHSig160_Hindi/Forged/H-S-137-F-01.tif"
+    ],
+    [
+      "data/BHSig260/BHSig160_Hindi/Forged/H-S-159-F-29.tif",
+      "data/BHSig260/BHSig160_Hindi/Forged/H-S-159-F-28.tif"
+    ],
+    [
+      "data/BHSig260/BHSig160_Hindi/Forged/H-S-70-F-03.tif",
+      "data/BHSig260/BHSig160_Hindi/Forged/H-S-70-F-27.tif"
+    ],
+    [
+      "data/BHSig260/BHSig160_Hindi/Forged/H-S-109-F-22.tif",
+      "data/BHSig260/BHSig160_Hindi/Forged/H-S-109-F-02.tif"
+    ],
+    [
+      "data/BHSig260/BHSig160_Hindi/Forged/H-S-156-F-30.tif",
+      "data/BHSig260/BHSig160_Hindi/Forged/H-S-156-F-03.tif"
+    ],
+    [
+      "data/BHSig260/BHSig160_Hindi/Forged/H-S-115-F-25.tif",
+      "data/BHSig260/BHSig160_Hindi/Forged/H-S-115-F-06.tif"
+    ],
+    [
+      "data/BHSig260/BHSig160_Hindi/Forged/H-S-011-F-25.tif",
+      "data/BHSig260/BHSig160_Hindi/Forged/H-S-011-F-07.tif"
+    ],
+    [
+      "data/BHSig260/BHSig160_Hindi/Forged/H-S-51-F-20.tif",
+      "data/BHSig260/BHSig160_Hindi/Forged/H-S-51-F-28.tif"
+    ],
+    [
+      "data/BHSig260/BHSig160_Hindi/Forged/H-S-011-F-24.tif",
+      "data/BHSig260/BHSig160_Hindi/Forged/H-S-011-F-06.tif"
+    ],
+    [
+      "data/BHSig260/BHSig160_Hindi/Forged/H-S-100-F-29.tif",
+      "data/BHSig260/BHSig160_Hindi/Forged/H-S-100-F-28.tif"
+    ],
+    [
+      "data/BHSig260/BHSig160_Hindi/Forged/H-S-51-F-27.tif",
+      "data/BHSig260/BHSig160_Hindi/Forged/H-S-51-F-19.tif"
+    ],
+    [
+      "data/BHSig260/BHSig160_Hindi/Forged/H-S-122-F-15.tif",
+      "data/BHSig260/BHSig160_Hindi/Forged/H-S-122-F-22.tif"
+    ],
+    [
+      "data/BHSig260/BHSig160_Hindi/Forged/H-S-122-F-17.tif",
+      "data/BHSig260/BHSig160_Hindi/Forged/H-S-122-F-24.tif"
+    ],
+    [
+      "data/BHSig260/BHSig160_Hindi/Forged/H-S-122-F-16.tif",
+      "data/BHSig260/BHSig160_Hindi/Forged/H-S-122-F-23.tif"
+    ],
+    [
+      "data/BHSig260/BHSig160_Hindi/Forged/H-S-122-F-27.tif",
+      "data/BHSig260/BHSig160_Hindi/Forged/H-S-122-F-20.tif"
+    ],
+    [
+      "data/BHSig260/BHSig160_Hindi/Forged/H-S-122-F-26.tif",
+      "data/BHSig260/BHSig160_Hindi/Forged/H-S-122-F-19.tif"
+    ],
+    [
+      "data/BHSig260/BHSig160_Hindi/Forged/H-S-122-F-18.tif",
+      "data/BHSig260/BHSig160_Hindi/Forged/H-S-122-F-25.tif"
+    ],
+    [
+      "data/BHSig260/BHSig160_Hindi/Forged/H-S-52-F-30.tif",
+      "data/BHSig260/BHSig160_Hindi/Forged/H-S-52-F-27.tif"
+    ],
+    [
+      "data/BHSig260/BHSig160_Hindi/Forged/H-S-109-F-12.tif",
+      "data/BHSig260/BHSig160_Hindi/Forged/H-S-109-F-01.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-44-G-24.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-44-G-18.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-89-G-22.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-89-G-14.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-88-G-22.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-88-G-09.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-88-G-13.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-68-G-01.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-68-G-17.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-90-G-11.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-90-G-21.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-91-G-11.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-91-G-22.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-90-G-05.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-90-G-19.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-62-G-16.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-62-G-24.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-86-G-17.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-86-G-02.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-87-G-03.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-87-G-18.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-87-G-17.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-87-G-02.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-86-G-03.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-86-G-18.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-66-G-20.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-66-G-07.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-67-G-20.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-67-G-04.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-67-G-08.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-67-G-23.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-82-G-21.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-82-G-13.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-83-G-21.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-83-G-05.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-66-G-08.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-66-G-21.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-52-G-22.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-52-G-17.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-52-G-07.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-53-G-22.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-53-G-13.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-20-G-15.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-20-G-06.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-20-G-09.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-20-G-01.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-20-G-17.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-20-G-10.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-20-G-08.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-20-G-23.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-20-G-14.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-20-G-07.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-20-G-05.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-53-G-23.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-53-G-14.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-52-G-23.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-52-G-08.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-66-G-09.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-66-G-22.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-83-G-20.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-83-G-04.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-82-G-20.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-82-G-05.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-67-G-21.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-67-G-05.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-86-G-16.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-86-G-24.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-63-G-17.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-63-G-11.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-63-G-24.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-62-G-17.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-62-G-04.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-56-G-15.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-56-G-24.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-91-G-10.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-91-G-21.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-90-G-04.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-90-G-18.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-90-G-10.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-90-G-20.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-91-G-04.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-91-G-18.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-1-G-15.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-1-G-24.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-88-G-23.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-88-G-10.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-89-G-23.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-89-G-15.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-94-G-18.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-94-G-04.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-94-G-24.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-94-G-16.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-70-G-19.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-70-G-07.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-88-G-21.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-88-G-08.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-89-G-21.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-89-G-11.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-68-G-16.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-68-G-24.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-68-G-02.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-68-G-18.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-74-G-07.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-74-G-22.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-57-G-17.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-57-G-04.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-56-G-17.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-56-G-05.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-87-G-14.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-87-G-23.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-86-G-14.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-86-G-22.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-66-G-23.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-66-G-10.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-83-G-22.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-83-G-13.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-82-G-22.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-82-G-14.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-53-G-21.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-53-G-12.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-52-G-21.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-52-G-06.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-52-G-09.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-52-G-24.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-20-G-02.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-20-G-16.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-20-G-11.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-20-G-22.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-20-G-18.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-53-G-08.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-53-G-18.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-21-G-17.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-21-G-19.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-21-G-24.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-20-G-03.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-20-G-12.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-20-G-21.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-20-G-19.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-20-G-24.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-52-G-20.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-52-G-05.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-53-G-20.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-53-G-11.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-82-G-23.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-82-G-15.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-83-G-23.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-83-G-15.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-67-G-22.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-67-G-07.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-39-G-24.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-39-G-01.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-86-G-15.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-86-G-23.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-87-G-15.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-87-G-24.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-68-G-03.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-68-G-19.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-69-G-17.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-69-G-04.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-89-G-20.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-89-G-10.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-88-G-20.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-88-G-07.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-70-G-18.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-70-G-05.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-94-G-19.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-94-G-05.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-70-G-24.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-70-G-15.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-70-G-08.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-70-G-20.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-94-G-21.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-94-G-10.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-88-G-24.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-88-G-14.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-88-G-15.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-88-G-12.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-89-G-24.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-89-G-16.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-88-G-18.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-88-G-05.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-89-G-18.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-89-G-04.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-68-G-13.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-68-G-23.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-69-G-07.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-69-G-20.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-91-G-17.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-91-G-03.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-90-G-03.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-90-G-17.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-56-G-06.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-56-G-18.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-57-G-06.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-57-G-19.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-86-G-05.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-86-G-20.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-63-G-10.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-63-G-23.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-62-G-10.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-62-G-23.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-21-G-13.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-21-G-21.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-21-G-07.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-21-G-23.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-20-G-13.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-20-G-04.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-20-G-20.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-52-G-18.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-52-G-03.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-53-G-24.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-53-G-15.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-21-G-06.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-21-G-22.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-52-G-19.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-52-G-04.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-53-G-19.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-53-G-10.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-15-G-10.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-15-G-09.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-15-G-24.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-63-G-05.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-63-G-18.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-62-G-05.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-62-G-18.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-87-G-04.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-87-G-19.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-86-G-04.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-86-G-19.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-57-G-07.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-57-G-20.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-56-G-07.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-56-G-19.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-90-G-16.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-90-G-24.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-68-G-12.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-68-G-22.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-69-G-06.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-69-G-19.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-89-G-19.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-89-G-05.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-88-G-19.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-88-G-06.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-70-G-21.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-70-G-09.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-94-G-20.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-94-G-06.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-94-G-22.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-94-G-14.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-70-G-23.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-70-G-11.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-68-G-04.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-68-G-20.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-69-G-10.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-69-G-23.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-90-G-14.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-90-G-22.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-91-G-14.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-91-G-23.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-57-G-05.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-57-G-18.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-56-G-11.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-56-G-23.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-57-G-11.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-57-G-24.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-63-G-07.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-63-G-20.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-62-G-07.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-62-G-20.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-82-G-24.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-82-G-16.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-66-G-19.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-66-G-06.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-83-G-24.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-83-G-16.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-67-G-19.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-67-G-03.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-82-G-18.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-82-G-03.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-83-G-18.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-83-G-02.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-83-G-19.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-83-G-03.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-67-G-24.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-67-G-11.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-82-G-19.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-82-G-04.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-66-G-24.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-66-G-11.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-67-G-18.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-67-G-02.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-15-G-13.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-15-G-23.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-66-G-18.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-66-G-05.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-62-G-06.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-62-G-19.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-63-G-06.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-63-G-19.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-87-G-13.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-87-G-22.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-87-G-07.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-87-G-20.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-86-G-13.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-86-G-21.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-57-G-10.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-57-G-23.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-56-G-10.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-56-G-22.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-91-G-15.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-91-G-24.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-90-G-15.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-90-G-23.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-69-G-05.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-69-G-18.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-68-G-05.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-68-G-21.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-69-G-11.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-69-G-24.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-70-G-22.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-70-G-10.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-94-G-23.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-94-G-15.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-3-G-24.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-3-G-18.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-3-G-06.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-97-G-03.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-97-G-14.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-97-G-17.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-97-G-06.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-97-G-19.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-73-G-02.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-73-G-17.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-73-G-16.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-73-G-01.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-92-G-21.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-92-G-09.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-93-G-21.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-93-G-10.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-93-G-09.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-93-G-20.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-77-G-20.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-77-G-06.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-42-G-22.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-42-G-14.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-43-G-22.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-43-G-09.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-48-G-09.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-48-G-19.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-49-G-09.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-49-G-22.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-49-G-21.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-49-G-08.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-48-G-21.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-48-G-10.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-54-G-18.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-54-G-04.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-98-G-22.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-98-G-17.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-98-G-04.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-98-G-12.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-55-G-18.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-55-G-05.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-54-G-24.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-54-G-10.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-55-G-24.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-55-G-11.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-50-G-12.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-50-G-24.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-100-G-19.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-100-G-09.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-51-G-06.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-51-G-20.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-23-G-19.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-23-G-23.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-80-G-11.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-80-G-24.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-81-G-05.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-81-G-18.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-81-G-11.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-81-G-24.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-80-G-05.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-80-G-18.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-65-G-04.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-65-G-17.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-65-G-10.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-65-G-23.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-64-G-05.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-64-G-18.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-65-G-11.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-65-G-24.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-65-G-05.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-65-G-18.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-81-G-10.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-81-G-23.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-80-G-04.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-80-G-17.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-80-G-10.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-80-G-23.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-81-G-04.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-81-G-17.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-23-G-18.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-23-G-20.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-50-G-07.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-50-G-19.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-51-G-07.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-51-G-21.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-100-G-18.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-100-G-24.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-100-G-08.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-23-G-24.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-23-G-22.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-98-G-23.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-98-G-18.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-98-G-05.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-98-G-13.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-55-G-19.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-55-G-06.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-54-G-19.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-54-G-05.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-49-G-20.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-49-G-14.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-49-G-15.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-49-G-16.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-49-G-07.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-49-G-13.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-48-G-08.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-48-G-18.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-43-G-23.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-43-G-10.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-42-G-23.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-42-G-15.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-92-G-08.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-92-G-20.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-77-G-21.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-77-G-07.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-77-G-09.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-77-G-22.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-97-G-16.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-97-G-05.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-97-G-02.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-97-G-12.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-97-G-23.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-3-G-19.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-3-G-12.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-47-G-17.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-47-G-23.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-93-G-22.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-93-G-11.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-92-G-22.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-92-G-10.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-77-G-23.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-77-G-10.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-43-G-21.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-43-G-08.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-85-G-24.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-85-G-17.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-61-G-19.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-61-G-05.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-48-G-22.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-48-G-11.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-98-G-21.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-98-G-03.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-98-G-16.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-98-G-11.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-51-G-05.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-51-G-19.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-79-G-16.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-79-G-24.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-50-G-11.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-50-G-23.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-80-G-06.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-80-G-19.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-81-G-06.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-81-G-19.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-64-G-07.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-64-G-20.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-65-G-07.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-65-G-20.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-65-G-06.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-65-G-19.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-64-G-06.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-64-G-19.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-81-G-07.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-81-G-20.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-80-G-07.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-80-G-20.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-51-G-04.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-51-G-18.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-50-G-10.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-50-G-18.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-50-G-22.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-79-G-17.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-79-G-05.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-51-G-10.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-51-G-24.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-98-G-20.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-98-G-02.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-98-G-15.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-98-G-10.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-49-G-23.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-49-G-10.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-85-G-19.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-85-G-04.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-61-G-24.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-61-G-10.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-61-G-18.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-61-G-04.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-43-G-20.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-43-G-07.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-92-G-23.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-92-G-11.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-93-G-23.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-93-G-15.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-97-G-01.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-97-G-10.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-97-G-22.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-97-G-15.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-97-G-04.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-47-G-16.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-47-G-22.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-3-G-22.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-3-G-09.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-3-G-15.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-73-G-10.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-73-G-23.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-43-G-24.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-43-G-11.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-42-G-24.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-42-G-16.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-43-G-18.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-43-G-04.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-61-G-20.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-61-G-06.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-85-G-21.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-85-G-06.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-61-G-08.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-61-G-22.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-55-G-22.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-55-G-09.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-54-G-22.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-54-G-08.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-98-G-24.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-98-G-19.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-98-G-14.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-98-G-06.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-79-G-07.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-79-G-19.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-100-G-23.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-100-G-06.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-100-G-16.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-64-G-17.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-64-G-22.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-64-G-09.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-100-G-22.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-100-G-04.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-100-G-14.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-51-G-01.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-51-G-15.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-79-G-06.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-79-G-18.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-54-G-23.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-54-G-09.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-55-G-23.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-55-G-10.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-61-G-09.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-61-G-23.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-85-G-20.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-85-G-05.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-61-G-21.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-61-G-07.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-43-G-19.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-43-G-05.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-73-G-05.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-73-G-18.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-73-G-11.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-73-G-24.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-3-G-23.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-3-G-08.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-3-G-16.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-3-G-21.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-3-G-10.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-3-G-14.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-73-G-07.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-73-G-20.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-92-G-18.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-92-G-05.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-93-G-18.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-93-G-05.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-92-G-24.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-92-G-15.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-93-G-24.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-93-G-16.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-77-G-19.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-77-G-05.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-48-G-24.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-48-G-12.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-85-G-22.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-85-G-15.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-54-G-21.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-54-G-07.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-55-G-21.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-55-G-08.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-51-G-03.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-51-G-17.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-79-G-10.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-79-G-22.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-50-G-17.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-50-G-21.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-50-G-09.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-78-G-10.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-78-G-23.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-100-G-20.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-100-G-10.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-64-G-15.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-64-G-24.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-64-G-14.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-64-G-23.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-23-G-21.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-23-G-11.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-100-G-21.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-100-G-13.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-100-G-03.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-78-G-11.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-78-G-24.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-51-G-16.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-51-G-02.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-79-G-11.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-79-G-23.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-55-G-20.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-55-G-07.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-54-G-20.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-54-G-06.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-85-G-23.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-85-G-16.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-49-G-19.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-49-G-06.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-77-G-18.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-77-G-04.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-93-G-19.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-93-G-06.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-77-G-24.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-77-G-11.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-92-G-19.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-92-G-07.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-97-G-07.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-97-G-20.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-73-G-06.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-73-G-19.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-3-G-20.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-3-G-07.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-3-G-17.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-43-G-17.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-43-G-03.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-48-G-14.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-48-G-17.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-48-G-07.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-79-G-08.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-79-G-20.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-78-G-08.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-78-G-21.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-79-G-21.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-79-G-09.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-78-G-09.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-78-G-22.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-100-G-11.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-100-G-01.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-100-G-05.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-100-G-15.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-55-G-04.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-55-G-17.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-48-G-15.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-48-G-05.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-43-G-02.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-43-G-16.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-73-G-22.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-73-G-09.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-73-G-08.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-73-G-21.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-97-G-21.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-97-G-08.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-92-G-17.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-92-G-04.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-93-G-17.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-93-G-04.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-49-G-17.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-49-G-05.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-100-G-07.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-100-G-17.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-100-G-12.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-100-G-02.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-48-G-16.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-48-G-06.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-97-G-18.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-97-G-24.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-6-G-09.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-6-G-22.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-54-G-17.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-54-G-03.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-51-G-09.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-51-G-23.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-80-G-22.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-80-G-09.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-81-G-22.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-81-G-09.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-65-G-22.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-65-G-09.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-50-G-08.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-50-G-20.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-51-G-08.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-51-G-22.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-47-G-24.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-47-G-18.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-81-G-21.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-81-G-08.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-64-G-08.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-64-G-21.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-65-G-08.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-65-G-21.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-80-G-21.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-80-G-08.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-61-G-03.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-61-G-17.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-89-G-03.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-89-G-17.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-88-G-17.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-88-G-03.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-69-G-08.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-69-G-21.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-75-G-19.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-75-G-22.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-57-G-21.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-57-G-08.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-56-G-21.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-56-G-09.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-57-G-09.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-57-G-22.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-67-G-01.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-67-G-17.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-53-G-17.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-53-G-07.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-21-G-20.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-21-G-18.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-62-G-22.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-62-G-09.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-63-G-22.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-63-G-09.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-56-G-08.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-56-G-20.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-74-G-24.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-74-G-09.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-75-G-24.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-75-G-21.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-91-G-19.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-91-G-08.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-69-G-09.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-69-G-22.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-88-G-02.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-88-G-16.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-70-G-04.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-70-G-17.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-63-G-08.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-63-G-21.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-62-G-08.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-62-G-21.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-87-G-21.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-87-G-08.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-82-G-17.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-82-G-02.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-66-G-17.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-66-G-04.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-74-G-23.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-74-G-08.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-75-G-23.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-75-G-20.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-94-G-03.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-94-G-17.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-32-G-15.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-32-G-14.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-91-G-09.tif",
+      "data/BHSig260/BHSig100_Bengali/Genuine/B-S-91-G-20.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-49-F-16.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-49-F-28.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-48-F-02.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-48-F-26.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-84-F-10.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-84-F-26.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-85-F-10.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-85-F-26.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-99-F-29.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-99-F-20.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-54-F-07.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-54-F-27.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-98-F-29.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-98-F-18.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-55-F-13.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-55-F-26.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-27-F-30.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-27-F-16.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-26-F-30.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-26-F-13.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-50-F-25.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-50-F-07.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-79-F-22.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-79-F-30.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-78-F-22.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-78-F-30.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-51-F-25.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-51-F-03.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-23-F-06.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-23-F-30.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-64-F-27.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-64-F-08.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-65-F-27.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-65-F-08.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-80-F-26.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-80-F-10.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-81-F-26.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-81-F-07.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-34-F-28.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-34-F-12.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-35-F-28.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-35-F-10.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-34-F-14.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-34-F-30.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-97-F-08.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-97-F-27.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-28-F-05.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-28-F-29.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-29-F-11.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-29-F-30.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-76-F-03.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-76-F-25.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-93-F-16.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-93-F-28.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-6-F-19.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-6-F-25.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-42-F-15.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-42-F-28.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-18-F-19.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-18-F-26.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-43-F-15.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-43-F-26.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-30-F-22.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-30-F-28.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-42-F-29.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-42-F-16.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-19-F-25.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-19-F-01.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-7-F-25.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-7-F-09.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-18-F-25.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-18-F-18.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-43-F-29.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-43-F-18.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-19-F-30.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-19-F-06.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-6-F-30.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-6-F-24.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-43-F-28.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-43-F-17.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-18-F-30.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-18-F-23.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-30-F-23.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-30-F-29.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-7-F-30.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-7-F-14.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-43-F-14.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-43-F-25.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-42-F-14.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-42-F-27.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-93-F-17.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-93-F-29.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-28-F-04.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-28-F-28.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-73-F-08.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-73-F-30.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-29-F-10.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-29-F-29.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-35-F-29.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-35-F-11.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-46-F-22.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-46-F-30.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-34-F-29.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-34-F-13.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-81-F-27.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-81-F-08.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-80-F-27.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-80-F-11.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-9-F-11.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-9-F-25.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-65-F-26.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-65-F-07.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-64-F-26.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-64-F-07.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-50-F-30.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-50-F-12.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-51-F-30.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-51-F-08.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-27-F-25.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-27-F-11.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-26-F-25.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-26-F-08.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-98-F-28.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-98-F-17.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-54-F-06.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-54-F-26.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-55-F-12.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-55-F-25.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-99-F-28.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-99-F-19.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-85-F-11.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-85-F-27.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-84-F-11.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-84-F-27.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-49-F-17.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-49-F-29.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-48-F-03.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-48-F-27.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-48-F-01.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-48-F-25.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-60-F-12.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-60-F-25.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-49-F-15.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-49-F-27.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-48-F-29.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-48-F-05.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-54-F-10.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-54-F-30.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-27-F-27.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-27-F-13.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-26-F-27.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-26-F-10.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-78-F-21.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-78-F-29.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-51-F-26.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-51-F-04.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-50-F-26.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-50-F-08.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-79-F-21.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-79-F-29.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-79-F-09.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-79-F-25.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-78-F-09.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-78-F-25.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-23-F-05.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-23-F-29.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-64-F-30.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-64-F-11.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-65-F-30.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-65-F-11.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-81-F-25.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-81-F-06.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-80-F-25.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-80-F-09.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-47-F-20.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-47-F-29.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-46-F-20.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-46-F-28.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-29-F-06.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-29-F-25.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-28-F-06.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-28-F-30.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-92-F-29.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-92-F-19.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-77-F-28.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-77-F-20.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-76-F-28.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-76-F-06.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-43-F-16.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-43-F-27.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-31-F-09.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-31-F-25.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-7-F-26.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-7-F-10.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-30-F-21.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-30-F-27.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-19-F-26.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-19-F-02.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-6-F-26.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-6-F-20.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-19-F-27.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-19-F-03.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-30-F-20.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-30-F-26.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-6-F-27.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-6-F-21.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-18-F-27.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-18-F-20.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-7-F-27.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-7-F-11.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-42-F-17.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-42-F-30.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-76-F-29.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-76-F-07.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-77-F-29.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-77-F-21.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-92-F-28.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-92-F-18.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-29-F-07.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-29-F-26.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-46-F-21.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-46-F-29.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-47-F-21.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-47-F-30.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-81-F-30.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-81-F-11.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-80-F-30.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-80-F-22.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-64-F-25.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-64-F-06.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-65-F-25.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-65-F-06.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-100-F-10.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-100-F-27.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-23-F-04.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-23-F-28.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-79-F-20.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-79-F-28.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-50-F-27.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-50-F-09.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-51-F-27.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-51-F-05.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-78-F-20.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-78-F-28.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-26-F-26.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-26-F-09.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-27-F-26.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-27-F-12.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-54-F-05.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-54-F-25.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-48-F-28.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-48-F-04.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-49-F-14.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-49-F-26.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-60-F-13.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-60-F-26.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-61-F-13.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-61-F-25.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-61-F-17.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-61-F-29.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-60-F-17.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-60-F-30.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-55-F-29.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-55-F-16.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-54-F-29.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-54-F-09.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-98-F-07.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-98-F-26.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-55-F-15.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-55-F-28.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-22-F-28.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-22-F-22.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-100-F-28.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-100-F-19.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-64-F-09.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-64-F-28.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-80-F-20.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-80-F-28.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-65-F-09.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-65-F-28.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-9-F-16.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-9-F-29.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-35-F-12.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-35-F-30.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-47-F-19.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-47-F-28.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-46-F-19.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-46-F-27.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-47-F-25.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-47-F-16.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-46-F-25.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-46-F-17.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-97-F-26.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-97-F-02.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-28-F-03.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-28-F-27.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-96-F-26.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-96-F-06.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-73-F-27.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-73-F-05.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-72-F-27.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-72-F-15.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-77-F-11.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-77-F-27.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-76-F-05.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-76-F-27.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-30-F-30.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-30-F-24.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-6-F-23.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-6-F-29.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-31-F-30.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-31-F-14.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-42-F-13.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-42-F-26.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-30-F-19.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-30-F-25.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-42-F-12.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-42-F-25.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-6-F-22.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-6-F-28.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-18-F-22.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-18-F-29.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-77-F-10.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-77-F-26.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-76-F-04.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-76-F-26.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-93-F-05.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-93-F-25.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-72-F-26.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-72-F-14.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-73-F-26.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-73-F-04.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-28-F-02.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-28-F-26.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-96-F-27.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-96-F-07.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-46-F-18.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-46-F-26.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-35-F-07.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-35-F-25.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-47-F-18.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-47-F-27.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-81-F-09.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-81-F-28.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-9-F-17.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-9-F-28.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-80-F-21.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-80-F-29.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-22-F-29.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-22-F-23.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-100-F-29.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-100-F-20.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-23-F-01.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-23-F-25.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-55-F-14.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-55-F-27.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-98-F-06.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-98-F-25.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-54-F-28.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-54-F-08.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-60-F-16.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-60-F-29.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-61-F-16.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-61-F-28.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-60-F-28.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-60-F-15.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-84-F-29.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-84-F-21.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-60-F-14.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-60-F-27.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-49-F-13.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-49-F-25.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-85-F-29.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-85-F-21.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-61-F-14.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-61-F-26.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-99-F-10.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-99-F-27.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-23-F-03.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-23-F-27.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-79-F-27.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-79-F-11.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-78-F-27.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-78-F-11.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-8-F-01.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-8-F-23.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-17-F-01.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-17-F-25.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-16-F-29.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-16-F-23.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-34-F-11.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-34-F-27.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-47-F-26.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-47-F-17.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-72-F-18.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-72-F-30.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-96-F-25.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-96-F-05.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-97-F-25.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-97-F-01.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-29-F-28.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-29-F-09.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-97-F-19.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-97-F-30.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-93-F-07.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-93-F-27.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-92-F-07.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-92-F-25.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-31-F-27.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-31-F-11.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-31-F-26.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-31-F-10.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-18-F-21.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-18-F-28.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-93-F-06.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-93-F-26.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-73-F-25.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-73-F-03.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-97-F-18.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-97-F-29.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-72-F-25.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-72-F-13.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-96-F-18.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-96-F-30.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-28-F-01.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-28-F-25.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-34-F-10.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-34-F-26.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-16-F-28.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-16-F-22.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-78-F-26.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-78-F-10.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-79-F-26.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-79-F-10.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-23-F-02.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-23-F-26.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-55-F-17.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-55-F-30.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-85-F-28.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-85-F-20.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-61-F-15.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-61-F-27.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-48-F-06.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-48-F-30.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-84-F-28.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-84-F-20.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-24-F-28.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-24-F-01.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-25-F-28.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-25-F-10.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-63-F-09.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-63-F-27.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-86-F-20.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-86-F-28.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-11-F-02.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-11-F-23.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-39-F-11.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-39-F-29.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-62-F-09.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-62-F-28.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-11-F-16.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-11-F-24.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-38-F-11.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-38-F-26.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-87-F-08.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-87-F-27.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-14-F-20.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-14-F-26.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-15-F-20.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-15-F-27.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-52-F-29.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-52-F-18.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-53-F-29.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-53-F-17.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-52-F-15.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-52-F-26.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-53-F-15.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-53-F-27.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-59-F-16.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-59-F-29.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-58-F-16.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-58-F-28.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-37-F-30.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-37-F-14.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-36-F-30.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-36-F-10.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-89-F-29.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-89-F-19.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-44-F-13.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-44-F-26.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-88-F-29.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-88-F-16.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-32-F-12.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-32-F-30.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-40-F-25.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-40-F-08.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-41-F-25.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-41-F-07.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-68-F-22.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-68-F-30.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-90-F-26.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-90-F-07.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-91-F-26.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-91-F-07.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-74-F-27.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-74-F-05.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-75-F-27.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-75-F-14.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-75-F-26.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-75-F-13.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-74-F-26.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-74-F-04.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-91-F-27.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-91-F-08.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-90-F-27.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-90-F-08.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-40-F-30.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-40-F-13.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-41-F-30.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-41-F-12.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-32-F-07.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-32-F-25.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-88-F-28.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-88-F-08.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-89-F-28.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-89-F-18.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-44-F-12.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-44-F-25.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-37-F-25.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-37-F-09.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-36-F-25.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-36-F-05.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-58-F-17.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-58-F-29.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-59-F-17.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-59-F-30.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-53-F-14.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-53-F-26.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-52-F-14.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-52-F-25.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-53-F-28.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-53-F-16.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-52-F-28.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-52-F-17.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-15-F-21.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-15-F-28.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-14-F-21.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-14-F-27.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-86-F-09.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-86-F-25.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-62-F-08.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-62-F-27.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-38-F-10.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-38-F-25.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-11-F-17.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-11-F-09.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-11-F-03.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-11-F-25.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-86-F-21.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-86-F-29.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-63-F-08.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-63-F-26.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-39-F-10.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-39-F-28.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-25-F-29.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-25-F-11.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-24-F-29.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-24-F-02.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-24-F-15.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-24-F-21.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-24-F-09.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-24-F-08.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-25-F-01.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-25-F-19.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-24-F-03.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-24-F-06.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-24-F-20.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-24-F-27.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-24-F-30.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-24-F-19.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-25-F-03.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-25-F-21.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-11-F-15.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-11-F-22.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-38-F-12.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-38-F-27.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-39-F-12.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-39-F-30.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-11-F-01.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-11-F-12.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-11-F-29.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-11-F-07.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-10-F-29.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-10-F-23.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-67-F-28.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-67-F-20.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-15-F-23.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-15-F-30.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-14-F-23.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-14-F-29.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-66-F-28.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-66-F-23.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-66-F-08.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-83-F-29.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-83-F-21.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-82-F-29.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-82-F-21.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-52-F-16.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-52-F-27.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-94-F-07.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-94-F-25.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-95-F-07.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-95-F-26.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-58-F-15.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-58-F-27.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-59-F-15.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-59-F-28.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-37-F-27.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-37-F-11.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-36-F-27.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-36-F-07.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-69-F-09.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-69-F-28.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-68-F-09.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-68-F-25.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-32-F-11.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-32-F-29.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-41-F-26.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-41-F-08.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-68-F-21.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-68-F-29.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-40-F-26.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-40-F-09.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-91-F-25.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-91-F-06.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-90-F-25.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-90-F-06.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-74-F-30.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-74-F-08.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-75-F-30.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-75-F-17.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-90-F-19.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-90-F-30.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-74-F-25.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-74-F-03.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-90-F-18.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-90-F-29.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-75-F-25.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-75-F-12.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-91-F-18.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-91-F-30.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-91-F-24.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-91-F-05.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-40-F-27.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-40-F-10.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-68-F-20.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-68-F-28.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-41-F-27.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-41-F-09.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-32-F-10.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-32-F-28.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-69-F-08.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-69-F-27.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-36-F-26.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-36-F-06.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-89-F-17.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-89-F-27.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-37-F-26.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-37-F-10.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-88-F-17.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-88-F-30.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-59-F-14.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-59-F-27.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-58-F-14.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-58-F-26.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-71-F-13.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-71-F-25.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-95-F-06.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-95-F-25.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-82-F-28.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-82-F-20.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-83-F-28.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-83-F-20.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-66-F-29.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-66-F-09.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-66-F-24.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-14-F-22.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-14-F-28.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-15-F-22.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-15-F-29.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-67-F-29.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-67-F-21.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-10-F-28.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-10-F-22.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-11-F-28.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-11-F-06.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-86-F-22.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-86-F-30.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-38-F-13.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-38-F-28.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-11-F-14.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-11-F-21.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-39-F-07.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-39-F-25.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-25-F-02.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-25-F-20.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-57-F-25.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-57-F-14.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-56-F-25.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-56-F-13.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-57-F-19.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-57-F-30.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-25-F-06.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-25-F-24.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-87-F-26.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-87-F-07.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-11-F-10.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-11-F-18.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-86-F-26.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-86-F-10.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-11-F-04.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-11-F-26.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-67-F-11.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-67-F-27.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-15-F-26.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-15-F-19.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-83-F-10.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-83-F-26.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-82-F-10.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-82-F-26.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-53-F-13.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-53-F-25.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-20-F-30.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-20-F-06.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-21-F-30.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-21-F-06.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-71-F-17.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-71-F-29.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-70-F-17.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-70-F-25.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-45-F-15.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-45-F-26.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-44-F-15.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-44-F-28.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-45-F-29.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-45-F-18.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-89-F-07.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-89-F-24.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-88-F-07.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-88-F-27.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-44-F-29.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-44-F-16.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-33-F-28.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-33-F-22.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-69-F-30.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-69-F-11.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-69-F-25.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-69-F-06.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-33-F-29.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-33-F-23.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-88-F-06.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-88-F-26.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-89-F-06.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-89-F-23.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-45-F-28.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-45-F-17.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-44-F-14.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-44-F-27.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-45-F-14.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-45-F-25.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-45-F-30.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-95-F-17.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-95-F-28.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-71-F-16.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-71-F-28.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-20-F-25.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-20-F-01.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-21-F-25.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-21-F-01.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-82-F-11.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-82-F-27.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-83-F-11.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-83-F-27.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-66-F-10.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-66-F-30.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-67-F-10.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-67-F-26.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-11-F-05.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-11-F-27.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-86-F-27.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-86-F-11.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-11-F-11.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-11-F-19.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-62-F-26.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-62-F-07.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-56-F-18.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-56-F-30.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-25-F-07.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-25-F-25.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-57-F-18.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-57-F-29.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-24-F-07.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-24-F-22.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-24-F-23.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-24-F-26.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-24-F-24.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-24-F-25.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-56-F-26.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-56-F-14.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-57-F-26.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-57-F-15.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-25-F-05.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-25-F-23.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-63-F-30.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-63-F-18.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-62-F-30.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-62-F-11.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-87-F-19.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-87-F-30.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-11-F-13.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-11-F-20.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-38-F-14.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-38-F-29.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-87-F-25.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-87-F-06.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-14-F-19.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-14-F-25.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-66-F-06.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-66-F-21.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-15-F-25.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-15-F-24.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-20-F-27.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-20-F-03.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-21-F-27.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-21-F-03.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-94-F-29.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-94-F-19.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-59-F-13.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-59-F-26.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-95-F-29.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-95-F-18.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-71-F-14.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-71-F-26.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-58-F-13.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-58-F-25.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-70-F-28.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-70-F-20.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-45-F-16.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-45-F-27.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-36-F-09.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-36-F-29.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-68-F-27.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-68-F-11.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-68-F-26.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-68-F-10.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-69-F-26.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-69-F-07.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-88-F-05.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-88-F-25.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-36-F-08.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-36-F-28.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-44-F-17.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-44-F-30.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-70-F-29.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-70-F-21.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-71-F-15.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-71-F-27.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-94-F-28.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-94-F-18.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-59-F-12.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-59-F-25.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-21-F-26.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-21-F-02.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-20-F-26.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-20-F-02.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-14-F-30.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-14-F-24.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-66-F-07.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-66-F-22.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-66-F-27.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-38-F-15.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-38-F-30.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-63-F-25.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-63-F-07.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-87-F-18.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-87-F-29.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-62-F-25.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-62-F-06.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-25-F-04.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-25-F-22.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-57-F-27.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-57-F-16.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-56-F-27.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-56-F-15.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-25-F-09.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-25-F-27.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-56-F-16.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-56-F-28.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-63-F-28.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-63-F-10.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-67-F-22.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-67-F-30.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-71-F-18.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-71-F-30.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-70-F-18.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-70-F-26.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-70-F-30.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-70-F-22.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-95-F-19.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-95-F-30.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-89-F-20.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-89-F-30.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-89-F-08.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-89-F-25.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-33-F-27.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-33-F-21.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-32-F-27.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-32-F-09.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-41-F-10.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-41-F-28.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-74-F-06.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-74-F-28.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-74-F-07.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-74-F-29.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-40-F-11.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-40-F-28.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-41-F-11.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-41-F-29.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-32-F-26.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-32-F-08.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-33-F-26.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-33-F-20.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-89-F-09.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-89-F-26.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-70-F-19.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-70-F-27.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-94-F-30.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-94-F-20.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-82-F-22.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-82-F-30.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-83-F-22.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-83-F-30.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-87-F-28.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-87-F-17.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-62-F-29.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-62-F-10.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-63-F-29.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-63-F-11.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-25-F-08.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-25-F-26.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-56-F-17.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-56-F-29.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-57-F-17.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-57-F-28.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-39-F-27.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-39-F-09.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-10-F-20.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-10-F-26.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-11-F-08.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-11-F-30.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-67-F-09.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-67-F-25.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-20-F-28.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-20-F-04.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-21-F-28.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-21-F-04.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-94-F-26.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-94-F-08.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-37-F-12.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-37-F-28.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-33-F-30.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-33-F-24.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-33-F-19.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-33-F-25.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-40-F-12.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-40-F-29.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-69-F-29.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-69-F-10.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-37-F-13.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-37-F-29.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-95-F-27.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-95-F-08.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-94-F-27.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-94-F-09.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-21-F-29.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-21-F-05.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-20-F-29.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-20-F-05.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-82-F-09.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-82-F-25.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-83-F-09.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-83-F-25.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-10-F-09.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-10-F-25.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-10-F-21.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-10-F-27.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-39-F-26.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-39-F-08.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-91-F-29.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-91-F-17.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-75-F-28.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-75-F-15.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-75-F-29.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-75-F-16.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-91-F-28.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-91-F-16.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-90-F-28.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-90-F-17.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-58-F-18.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-58-F-30.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-10-F-30.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-10-F-24.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-25-F-18.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-25-F-30.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-52-F-19.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-52-F-30.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-53-F-18.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-53-F-30.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-61-F-30.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-61-F-18.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-85-F-25.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-85-F-09.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-84-F-25.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-84-F-09.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-99-F-08.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-99-F-25.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-98-F-08.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-98-F-27.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-26-F-11.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-26-F-28.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-50-F-10.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-50-F-28.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-22-F-27.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-22-F-21.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-17-F-19.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-17-F-26.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-16-F-19.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-16-F-25.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-9-F-19.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-9-F-26.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-34-F-09.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-34-F-25.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-35-F-09.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-35-F-27.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-96-F-29.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-96-F-17.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-73-F-28.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-73-F-06.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-72-F-28.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-72-F-16.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-77-F-22.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-77-F-30.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-19-F-04.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-19-F-28.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-19-F-05.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-19-F-29.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-72-F-29.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-72-F-17.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-73-F-29.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-73-F-07.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-96-F-28.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-96-F-16.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-97-F-28.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-97-F-17.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-35-F-08.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-35-F-26.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-16-F-24.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-16-F-30.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-9-F-24.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-9-F-20.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-9-F-30.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-9-F-23.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-9-F-18.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-9-F-27.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-100-F-26.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-100-F-09.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-22-F-26.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-22-F-20.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-50-F-11.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-50-F-29.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-99-F-21.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-99-F-30.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-99-F-09.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-99-F-26.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-85-F-30.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-85-F-22.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-84-F-30.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-84-F-22.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-26-F-12.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-26-F-29.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-51-F-07.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-51-F-29.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-22-F-24.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-22-F-30.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-100-F-30.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-100-F-21.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-16-F-26.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-16-F-20.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-81-F-10.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-81-F-29.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-29-F-27.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-29-F-08.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-92-F-08.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-92-F-26.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-92-F-20.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-92-F-30.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-77-F-09.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-77-F-25.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-31-F-28.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-31-F-12.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-7-F-13.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-7-F-29.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-7-F-12.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-7-F-28.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-31-F-29.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-31-F-13.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-76-F-08.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-76-F-30.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-92-F-09.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-92-F-27.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-16-F-27.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-16-F-21.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-65-F-10.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-65-F-29.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-64-F-10.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-64-F-29.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-22-F-25.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-22-F-19.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-100-F-25.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-100-F-08.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-51-F-06.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-51-F-28.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-93-F-18.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-93-F-30.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-49-F-30.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-49-F-18.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-27-F-14.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-27-F-28.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-98-F-19.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-98-F-30.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-43-F-19.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-43-F-30.tif"
+    ],
+    [
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-27-F-29.tif",
+      "data/BHSig260/BHSig100_Bengali/Forged/B-S-27-F-15.tif"
+    ]
+  ],
+  "datasets": {
+    "bhsig_bn": {
+      "n": 5400,
+      "signers": 100,
+      "g": 2400,
+      "f": 3000,
+      "dh": [
+        233,
+        305
+      ],
+      "dw": [
+        898,
+        1083
+      ],
+      "ug": 3.0,
+      "mode": "grayscale",
+      "ink": 3.0
+    },
+    "bhsig_hi": {
+      "n": 8640,
+      "signers": 160,
+      "g": 3840,
+      "f": 4800,
+      "dh": [
+        229,
+        435
+      ],
+      "dw": [
+        843,
+        1329
+      ],
+      "ug": 2.0,
+      "mode": "grayscale",
+      "ink": 3.3
+    },
+    "cedar": {
+      "n": 2592,
+      "signers": 54,
+      "g": 1296,
+      "f": 1296,
+      "dh": [
+        145,
+        594
+      ],
+      "dw": [
+        264,
+        714
+      ],
+      "ug": 164.4,
+      "mode": "grayscale",
+      "ink": 1.42
+    }
+  },
+  "signers": {
+    "bhsig_bn_001": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_bn_002": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_bn_003": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_bn_004": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_bn_005": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_bn_006": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_bn_007": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_bn_008": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_bn_009": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_bn_010": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_bn_011": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_bn_012": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_bn_013": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_bn_014": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_bn_015": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_bn_016": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_bn_017": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_bn_018": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_bn_019": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_bn_020": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_bn_021": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_bn_022": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_bn_023": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_bn_024": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_bn_025": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_bn_026": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_bn_027": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_bn_028": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_bn_029": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_bn_030": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_bn_031": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_bn_032": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_bn_033": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_bn_034": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_bn_035": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_bn_036": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_bn_037": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_bn_038": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_bn_039": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_bn_040": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_bn_041": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_bn_042": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_bn_043": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_bn_044": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_bn_045": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_bn_046": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_bn_047": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_bn_048": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_bn_049": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_bn_050": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_bn_051": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_bn_052": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_bn_053": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_bn_054": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_bn_055": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_bn_056": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_bn_057": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_bn_058": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_bn_059": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_bn_060": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_bn_061": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_bn_062": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_bn_063": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_bn_064": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_bn_065": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_bn_066": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_bn_067": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_bn_068": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_bn_069": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_bn_070": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_bn_071": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_bn_072": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_bn_073": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_bn_074": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_bn_075": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_bn_076": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_bn_077": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_bn_078": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_bn_079": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_bn_080": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_bn_081": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_bn_082": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_bn_083": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_bn_084": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_bn_085": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_bn_086": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_bn_087": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_bn_088": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_bn_089": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_bn_090": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_bn_091": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_bn_092": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_bn_093": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_bn_094": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_bn_095": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_bn_096": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_bn_097": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_bn_098": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_bn_099": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_bn_100": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_001": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_002": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_003": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_004": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_005": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_006": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_007": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_008": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_009": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_010": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_011": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_012": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_013": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_014": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_015": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_016": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_017": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_018": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_019": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_020": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_021": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_022": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_023": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_024": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_025": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_026": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_027": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_028": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_029": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_030": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_031": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_032": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_033": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_034": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_035": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_036": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_037": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_038": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_039": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_040": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_041": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_042": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_043": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_044": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_045": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_046": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_047": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_048": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_049": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_050": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_051": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_052": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_053": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_054": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_055": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_056": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_057": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_058": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_059": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_060": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_061": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_062": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_063": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_064": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_065": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_066": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_067": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_068": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_069": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_070": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_071": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_072": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_073": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_074": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_075": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_076": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_077": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_078": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_079": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_080": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_081": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_082": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_083": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_084": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_085": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_086": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_087": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_088": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_089": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_090": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_091": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_092": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_093": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_094": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_095": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_096": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_097": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_098": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_099": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_100": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_101": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_102": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_103": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_104": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_105": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_106": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_107": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_108": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_109": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_110": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_111": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_112": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_113": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_114": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_115": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_116": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_117": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_118": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_119": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_120": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_121": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_122": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_123": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_124": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_125": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_126": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_127": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_128": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_129": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_130": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_131": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_132": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_133": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_134": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_135": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_136": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_137": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_138": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_139": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_140": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_141": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_142": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_143": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_144": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_145": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_146": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_147": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_148": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_149": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_150": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_151": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_152": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_153": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_154": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_155": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_156": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_157": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_158": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_159": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "bhsig_hi_160": {
+      "g": 24,
+      "f": 30,
+      "t": 54
+    },
+    "cedar_001": {
+      "g": 24,
+      "f": 24,
+      "t": 48
+    },
+    "cedar_002": {
+      "g": 24,
+      "f": 24,
+      "t": 48
+    },
+    "cedar_003": {
+      "g": 24,
+      "f": 24,
+      "t": 48
+    },
+    "cedar_004": {
+      "g": 24,
+      "f": 24,
+      "t": 48
+    },
+    "cedar_005": {
+      "g": 24,
+      "f": 24,
+      "t": 48
+    },
+    "cedar_006": {
+      "g": 24,
+      "f": 24,
+      "t": 48
+    },
+    "cedar_008": {
+      "g": 24,
+      "f": 24,
+      "t": 48
+    },
+    "cedar_009": {
+      "g": 24,
+      "f": 24,
+      "t": 48
+    },
+    "cedar_010": {
+      "g": 24,
+      "f": 24,
+      "t": 48
+    },
+    "cedar_011": {
+      "g": 24,
+      "f": 24,
+      "t": 48
+    },
+    "cedar_012": {
+      "g": 24,
+      "f": 24,
+      "t": 48
+    },
+    "cedar_013": {
+      "g": 24,
+      "f": 24,
+      "t": 48
+    },
+    "cedar_014": {
+      "g": 24,
+      "f": 24,
+      "t": 48
+    },
+    "cedar_015": {
+      "g": 24,
+      "f": 24,
+      "t": 48
+    },
+    "cedar_016": {
+      "g": 24,
+      "f": 24,
+      "t": 48
+    },
+    "cedar_017": {
+      "g": 24,
+      "f": 24,
+      "t": 48
+    },
+    "cedar_018": {
+      "g": 24,
+      "f": 24,
+      "t": 48
+    },
+    "cedar_019": {
+      "g": 24,
+      "f": 24,
+      "t": 48
+    },
+    "cedar_020": {
+      "g": 24,
+      "f": 24,
+      "t": 48
+    },
+    "cedar_021": {
+      "g": 24,
+      "f": 24,
+      "t": 48
+    },
+    "cedar_022": {
+      "g": 24,
+      "f": 24,
+      "t": 48
+    },
+    "cedar_023": {
+      "g": 24,
+      "f": 24,
+      "t": 48
+    },
+    "cedar_024": {
+      "g": 24,
+      "f": 24,
+      "t": 48
+    },
+    "cedar_025": {
+      "g": 24,
+      "f": 24,
+      "t": 48
+    },
+    "cedar_026": {
+      "g": 24,
+      "f": 24,
+      "t": 48
+    },
+    "cedar_027": {
+      "g": 24,
+      "f": 24,
+      "t": 48
+    },
+    "cedar_028": {
+      "g": 24,
+      "f": 24,
+      "t": 48
+    },
+    "cedar_029": {
+      "g": 24,
+      "f": 24,
+      "t": 48
+    },
+    "cedar_030": {
+      "g": 24,
+      "f": 24,
+      "t": 48
+    },
+    "cedar_031": {
+      "g": 24,
+      "f": 24,
+      "t": 48
+    },
+    "cedar_032": {
+      "g": 24,
+      "f": 24,
+      "t": 48
+    },
+    "cedar_033": {
+      "g": 24,
+      "f": 24,
+      "t": 48
+    },
+    "cedar_034": {
+      "g": 24,
+      "f": 24,
+      "t": 48
+    },
+    "cedar_035": {
+      "g": 24,
+      "f": 24,
+      "t": 48
+    },
+    "cedar_036": {
+      "g": 24,
+      "f": 24,
+      "t": 48
+    },
+    "cedar_037": {
+      "g": 24,
+      "f": 24,
+      "t": 48
+    },
+    "cedar_038": {
+      "g": 24,
+      "f": 24,
+      "t": 48
+    },
+    "cedar_039": {
+      "g": 24,
+      "f": 24,
+      "t": 48
+    },
+    "cedar_040": {
+      "g": 24,
+      "f": 24,
+      "t": 48
+    },
+    "cedar_041": {
+      "g": 24,
+      "f": 24,
+      "t": 48
+    },
+    "cedar_042": {
+      "g": 24,
+      "f": 24,
+      "t": 48
+    },
+    "cedar_043": {
+      "g": 24,
+      "f": 24,
+      "t": 48
+    },
+    "cedar_044": {
+      "g": 24,
+      "f": 24,
+      "t": 48
+    },
+    "cedar_045": {
+      "g": 24,
+      "f": 24,
+      "t": 48
+    },
+    "cedar_046": {
+      "g": 24,
+      "f": 24,
+      "t": 48
+    },
+    "cedar_047": {
+      "g": 24,
+      "f": 24,
+      "t": 48
+    },
+    "cedar_048": {
+      "g": 24,
+      "f": 24,
+      "t": 48
+    },
+    "cedar_049": {
+      "g": 24,
+      "f": 24,
+      "t": 48
+    },
+    "cedar_050": {
+      "g": 24,
+      "f": 24,
+      "t": 48
+    },
+    "cedar_051": {
+      "g": 24,
+      "f": 24,
+      "t": 48
+    },
+    "cedar_052": {
+      "g": 24,
+      "f": 24,
+      "t": 48
+    },
+    "cedar_053": {
+      "g": 24,
+      "f": 24,
+      "t": 48
+    },
+    "cedar_054": {
+      "g": 24,
+      "f": 24,
+      "t": 48
+    },
+    "cedar_055": {
+      "g": 24,
+      "f": 24,
+      "t": 48
+    }
+  },
+  "tot_signers": 314,
+  "tot_genuine": 7536,
+  "tot_forged": 9096
+}

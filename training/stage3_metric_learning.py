@@ -78,9 +78,9 @@ def load_manifest(
                 raise ValueError(
                     f"manifest row {row_number}: image_path and signer_id cannot be empty"
                 )
-            if split not in {"train", "val", "validation", "test"}:
+            if split not in {"train", "val", "validation", "test", "fusion"}:
                 raise ValueError(
-                    f"manifest row {row_number}: split must be train, val, or test"
+                    f"manifest row {row_number}: split must be train, val, fusion, or test"
                 )
 
             path = Path(image_path).expanduser()

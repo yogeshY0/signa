@@ -40,12 +40,16 @@ def _read_rows(manifest: Path) -> list[dict[str, str]]:
 
 
 def _dataset(row: dict[str, str]) -> str:
-    """Group rows by dataset: path first component, except BHSig260 which is
-    split by language (e.g. ``BHSig260/BHSig100_Bengali``)."""
-    parts = Path(row["image_path"]).parts
-    if len(parts) >= 2 and parts[0] == "BHSig260":
-        return f"{parts[0]}/{parts[1]}"
-    return parts[0] or "(root)"
+    """Group rows by dataset derived from signer_id prefix."""
+    sid = row.get("signer_id", "")
+    if sid.startswith("cedar"):
+        return "cedar"
+    if sid.startswith("bhsig_bn"):
+        return "bhsig_bn"
+    if sid.startswith("bhsig_hi"):
+        return "bhsig_hi"
+    # Fallback for any unknown signer prefix.
+    return sid.rsplit("_", 1)[0] if "_" in sid else sid
 
 
 def _audit_one(path: Path) -> dict:
