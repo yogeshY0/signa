@@ -26,13 +26,12 @@ EVAL = "/kaggle/working/eval.json"
 
 # ==== Cell 3: Train ====
 """
-!python -m training.train_siamese --manifest $DATA/manifest.csv \\
+!python -m training.train_siamese --manifest $MF --image-root $DATA \\
   --resize-only --dataset-mix equal --references 1 \\
-  --output-dir /kaggle/working/$RUN \\
+  --output-dir /kaggle/working/raw_triplet \\
   --device cuda --workers 2 \\
   --phase1-epochs 5 --phase2-epochs 40 --patience 8 \\
-  --margin 0.3 --seed 42 \\
-  2>&1 | tee $LOG
+  --margin 0.3 --seed 42
 """
 
 # ==== Cell 4: Curves ====
@@ -44,8 +43,7 @@ display(Image(CURVES))
 
 # ==== Cell 5: Evaluate ====
 """
-!python -m training.evaluate --checkpoint $CKPT --manifest $DATA/manifest.csv \\
+!python -m training.evaluate --checkpoint $CKPT --manifest $MF --image-root $DATA \\
   --resize-only --references 1 --device cuda --workers 2 --bootstrap 1000 \\
-  --target-far 0.01 0.05 \\
-  2>&1 | tee $EVAL
+  --target-far 0.01 0.05
 """
