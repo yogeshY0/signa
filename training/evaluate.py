@@ -57,9 +57,10 @@ def _read_split(manifest: Path, root: Path, splits: set[str]) -> list[SignatureR
 
 
 @torch.no_grad()
-def _embed(model, records, already_preprocessed, device, batch_size, workers) -> np.ndarray:
+def _embed(model, records, already_preprocessed, device, batch_size, workers, resize_only=False) -> np.ndarray:
     dataset = SignatureDataset(
-        records, {r.signer_id: 0 for r in records}, already_preprocessed=already_preprocessed
+        records, {r.signer_id: 0 for r in records},
+        already_preprocessed=already_preprocessed, resize_only=resize_only
     )
     loader = DataLoader(dataset, batch_size=batch_size, shuffle=False, num_workers=workers)
     model.eval()
@@ -184,6 +185,8 @@ def main() -> None:
     parser.add_argument("--manifest", type=Path, required=True)
     parser.add_argument("--image-root", type=Path)
     parser.add_argument("--already-preprocessed", action="store_true")
+    parser.add_argument("--resize-only", action="store_true",
+                        help="Fast path: read raw, grayscale, resize to 192x384, normalise (no crop/whiten).")
     parser.add_argument("--references", type=int, default=5)
     parser.add_argument("--device", default="cuda" if torch.cuda.is_available() else "cpu")
     parser.add_argument("--batch-size", type=int, default=64)
@@ -194,6 +197,8 @@ def main() -> None:
     parser.add_argument("--target-far", type=float, nargs="*", default=[],
                         help="Operating-point FAR targets (e.g. 0.01 0.05). Threshold chosen on val; FRR reported on test.")
     args = parser.parse_args()
+    if args.already_preprocessed and args.resize_only:
+        raise ValueError("--already-preprocessed and --resize-only are mutually exclusive")
 
     root = (args.image_root or args.manifest.parent).resolve()
     checkpoint = torch.load(args.checkpoint, map_location="cpu")
@@ -207,7 +212,8 @@ def main() -> None:
     for name, splits in (("val", {"val", "validation"}), ("test", {"test"})):
         records = _read_split(args.manifest, root, splits)
         embeddings = _embed(
-            model, records, args.already_preprocessed, args.device, args.batch_size, args.workers
+            model, records, args.already_preprocessed, args.device, args.batch_size, args.workers,
+            resize_only=args.resize_only
         )
         results[name] = _scores(records, embeddings, args.references)
 

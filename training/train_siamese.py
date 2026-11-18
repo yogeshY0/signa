@@ -85,11 +85,12 @@ def _validation_threshold_and_eer(
     records,
     *,
     already_preprocessed: bool,
+    resize_only: bool = False,
     device: torch.device,
     references: int = 5,
 ) -> tuple[float, float]:
     """Return the validation threshold and skilled-forgery EER."""
-    embeddings = _embed(model, records, already_preprocessed, device, 64, 0)
+    embeddings = _embed(model, records, already_preprocessed, device, 64, 0, resize_only=resize_only)
     scores = _scores(records, embeddings, references)
     genuine, skilled, _ = _pool(scores, sorted(scores))
     return _eer_threshold(genuine, skilled)
@@ -140,6 +141,8 @@ def _parse_args() -> argparse.Namespace:
         action="store_true",
         help="Input files are already 192x384 Stage 2 output images",
     )
+    parser.add_argument("--resize-only", action="store_true",
+        help="Fast path: read raw, grayscale, resize to 192x384, normalise (no crop/whiten).")
     parser.add_argument("--no-pretrained", action="store_true")
     parser.add_argument(
         "--augment",
@@ -189,6 +192,8 @@ def main() -> None:
         raise ValueError("workers cannot be negative")
     if args.margin <= 0:
         raise ValueError("margin must be positive")
+    if args.already_preprocessed and args.resize_only:
+        raise ValueError("--already-preprocessed and --resize-only are mutually exclusive")
 
     _set_seed(args.seed)
     train_records, validation_records = load_manifest(args.manifest, args.image_root)
@@ -201,6 +206,7 @@ def main() -> None:
         train_records,
         signer_to_index,
         already_preprocessed=args.already_preprocessed,
+        resize_only=args.resize_only,
         ink=args.ink,
         augment=args.augment,
     )
@@ -208,6 +214,7 @@ def main() -> None:
         validation_records,
         signer_to_index,
         already_preprocessed=args.already_preprocessed,
+        resize_only=args.resize_only,
         ink=args.ink,
     )
 
@@ -331,6 +338,7 @@ def main() -> None:
                 model,
                 eer_records,
                 already_preprocessed=args.already_preprocessed,
+                resize_only=args.resize_only,
                 device=device,
                 references=args.references,
             ) if eer_records else math.nan
@@ -368,6 +376,7 @@ def main() -> None:
                         "seed": args.seed,
                         "preprocessing": {
                             "already_preprocessed": args.already_preprocessed,
+                            "resize_only": args.resize_only,
                             "ink": args.ink,
                             "binarize": False,  # the training loader keeps grayscale strokes
                             "augmentation": args.augment,

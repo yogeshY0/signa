@@ -122,14 +122,15 @@ class SignatureDataset(Dataset[tuple[Tensor, int, bool]]):
         signer_to_index: dict[str, int],
         *,
         already_preprocessed: bool = False,
+        resize_only: bool = False,
         ink: Literal["auto", "light", "dark"] = "auto",
         augment: bool = False,
     ) -> None:
         self.records = list(records)
-        # Augmentation is for the training split only; evaluation data stays untouched.
         self.augment = augment
         self.signer_to_index = signer_to_index
         self.already_preprocessed = already_preprocessed
+        self.resize_only = resize_only
         self.ink = ink
 
     def __len__(self) -> int:
@@ -137,8 +138,7 @@ class SignatureDataset(Dataset[tuple[Tensor, int, bool]]):
 
     def __getitem__(self, index: int) -> tuple[Tensor, int, bool]:
         record = self.records[index]
-        # Already-preprocessed files are grayscale at the model's fixed input size.
-        read_mode = cv2.IMREAD_GRAYSCALE if self.already_preprocessed else cv2.IMREAD_COLOR
+        read_mode = cv2.IMREAD_GRAYSCALE if self.already_preprocessed or self.resize_only else cv2.IMREAD_COLOR
         image = cv2.imread(str(record.image_path), read_mode)
         if image is None:
             raise FileNotFoundError(f"could not read signature image: {record.image_path}")
@@ -151,13 +151,16 @@ class SignatureDataset(Dataset[tuple[Tensor, int, bool]]):
                     f"expected {expected_shape}"
                 )
             preprocessed = image
+        elif self.resize_only:
+            # Fast path: grayscale + stretch resize + normalise.
+            target_w, target_h = DEFAULT_TARGET_SIZE
+            preprocessed = cv2.resize(image, (target_w, target_h), interpolation=cv2.INTER_AREA)
         else:
             preprocessed = preprocess_signature(image, ink=self.ink)
 
         if self.augment:
             preprocessed = augment_signature(preprocessed)
 
-        # The model accepts three channels; preprocessing repeats grayscale for RGB.
         tensor = torch.from_numpy(to_model_input(preprocessed))
         return tensor, self.signer_to_index[record.signer_id], record.is_forgery
 
