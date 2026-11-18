@@ -51,12 +51,13 @@ def _build_pairs(records):
     return pairs
 
 
-def _neural_sims(model, device, ref_paths, query_paths, batch_size=64):
+def _neural_sims(model, device, ref_paths, query_paths, batch_size=64, resize_only=False):
     all_p = list(set(str(p) for p in ref_paths) | set(str(p) for p in query_paths))
     idx = {p: i for i, p in enumerate(all_p)}
     recs = [SignatureRecord(image_path=Path(p), signer_id=f"d_{i}", is_forgery=False)
             for i, p in enumerate(all_p)]
-    ds = SignatureDataset(recs, {r.signer_id: 0 for r in recs}, already_preprocessed=True)
+    ds = SignatureDataset(recs, {r.signer_id: 0 for r in recs},
+                          already_preprocessed=not resize_only, resize_only=resize_only)
     loader = DataLoader(ds, batch_size=batch_size, shuffle=False, num_workers=0)
     model.eval()
     embs = []
@@ -64,6 +65,9 @@ def _neural_sims(model, device, ref_paths, query_paths, batch_size=64):
         for images, _, _ in loader: embs.append(model(images.to(device)).cpu().numpy())
     emb = np.concatenate(embs)
     emb = emb / np.linalg.norm(emb, axis=1, keepdims=True).clip(min=1e-8)
+    return np.array([float(np.dot(emb[idx[str(r)]], emb[idx[str(q)]]))
+                     for r, q in zip(ref_paths, query_paths)], dtype=np.float64)
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     parser.add_argument("--manifest", type=Path, required=True)
@@ -73,6 +77,8 @@ def main():
     parser.add_argument("--output-dir", type=Path, default=Path("artifacts/fusion"))
     parser.add_argument("--device", default="cuda" if torch.cuda.is_available() else "cpu")
     parser.add_argument("--batch-size", type=int, default=64)
+    parser.add_argument("--resize-only", action="store_true",
+                        help="Use resize-only mode for neural embeddings (same as training).")
     parser.add_argument("--C", type=float, default=1.0)
     args = parser.parse_args()
     out_dir = args.output_dir.resolve(); out_dir.mkdir(parents=True, exist_ok=True)
@@ -94,7 +100,7 @@ def main():
     def _compute(pairs):
         refs = [p["ref"] for p in pairs]; qs = [p["q"] for p in pairs]
         y = np.array([p["label"] for p in pairs], dtype=np.int32)
-        neural = _neural_sims(model, args.device, refs, qs, args.batch_size)
+        neural = _neural_sims(model, args.device, refs, qs, args.batch_size, resize_only=args.resize_only)
         all_p = sorted(set(str(r) for r in refs) | set(str(q) for q in qs))
         cache = {}
         for i, p in enumerate(all_p):
@@ -141,5 +147,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-    return np.array([float(np.dot(emb[idx[str(r)]], emb[idx[str(q)]]))
-                     for r, q in zip(ref_paths, query_paths)], dtype=np.float64)
