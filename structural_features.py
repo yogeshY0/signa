@@ -50,11 +50,16 @@ def _hu_moments(mask: np.ndarray) -> np.ndarray:
     return (np.sign(hu) * np.log10(np.abs(hu) + 1e-10)).flatten()
 
 def _projection_profiles(mask: np.ndarray, bins: int = 32) -> tuple[np.ndarray, np.ndarray]:
+    hp = np.sum(mask, axis=1).astype(np.float64) / mask.shape[1]
+    vp = np.sum(mask, axis=0).astype(np.float64) / mask.shape[0]
     h, w = mask.shape
-    hp = np.sum(mask, axis=1).astype(np.float64) / w
-    vp = np.sum(mask, axis=0).astype(np.float64) / h
-    hb = np.mean(hp.reshape(bins, -1), axis=1) if h >= bins else np.pad(hp, (0, bins - h))
-    vb = np.mean(vp.reshape(bins, -1), axis=1) if w >= bins else np.pad(vp, (0, bins - w))
+    # Pad so dimensions divide evenly into bins (handles raw images of any size)
+    h_pad = (bins - h % bins) % bins
+    w_pad = (bins - w % bins) % bins
+    if h_pad: hp = np.pad(hp, (0, h_pad))
+    if w_pad: vp = np.pad(vp, (0, w_pad))
+    hb = np.mean(hp.reshape(bins, -1), axis=1)
+    vb = np.mean(vp.reshape(bins, -1), axis=1)
     return hb, vb
 
 def _geometry(mask: np.ndarray) -> np.ndarray:
