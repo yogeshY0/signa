@@ -191,6 +191,8 @@ def main() -> None:
     parser.add_argument(
         "--bootstrap", type=int, default=1000, help="Signer resamples for 95%% intervals; 0 disables."
     )
+    parser.add_argument("--target-far", type=float, nargs="*", default=[],
+                        help="Operating-point FAR targets (e.g. 0.01 0.05). Threshold chosen on val; FRR reported on test.")
     args = parser.parse_args()
 
     root = (args.image_root or args.manifest.parent).resolve()
@@ -227,17 +229,34 @@ def main() -> None:
         for name in sorted({_dataset(s) for s in test_signers})
     }
 
-    print(
-        json.dumps(
-            {
-                "threshold_from_validation": threshold,
-                "validation_eer_skilled": val_eer,
-                "test": _summary(test_scores, test_signers, threshold, args.bootstrap),
-                "test_per_dataset": per_dataset,
-            },
-            indent=2,
-        )
-    )
+    output = {
+        "threshold_from_validation": threshold,
+        "validation_eer_skilled": val_eer,
+        "test": _summary(test_scores, test_signers, threshold, args.bootstrap),
+        "test_per_dataset": per_dataset,
+    }
+
+    # Optional: thresholds at target FAR levels.
+    for target_far in args.target_far:
+        # Find threshold on val that gives FAR <= target_far.
+        candidates = np.unique(np.concatenate([val_gen, val_skilled]))
+        neg_sorted = np.sort(val_skilled)
+        far_vals = 1 - np.searchsorted(neg_sorted, candidates, side="left") / len(val_skilled)
+        valid = np.where(far_vals <= target_far)[0]
+        if len(valid) == 0:
+            # Fall back to max threshold (most strict).
+            tgt_th = float(candidates[-1])
+        else:
+            # Pick the lowest threshold that meets the target (least strict among those that satisfy).
+            tgt_th = float(candidates[valid[0]])
+        gen_sorted = np.sort(val_gen)
+        frr_val = float((gen_sorted < tgt_th).mean())
+        key = f"test_at_far_{target_far:.4f}"
+        output[key] = _summary(test_scores, test_signers, tgt_th, args.bootstrap)
+        output[f"validation_frr_at_far_{target_far:.4f}"] = frr_val
+        output[f"threshold_at_far_{target_far:.4f}"] = tgt_th
+
+    print(json.dumps(output, indent=2))
 
 
 if __name__ == "__main__":
